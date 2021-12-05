@@ -1,4 +1,6 @@
 module.exports = {
+  pathPrefix: "/MaquiBlog-Pages",
+
   siteMetadata: {
     title: `Blog de MaQuiNa1995`,
     author: {
