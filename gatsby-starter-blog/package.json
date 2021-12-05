@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "el_rincon_del_maquinarias",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Un blog sobre java y golang",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Christian Muñoz Asón <maquina1995@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },

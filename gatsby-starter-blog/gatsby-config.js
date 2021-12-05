@@ -1,17 +1,14 @@
 module.exports = {
-  pathPrefix: "/MaquiBlog-Pages",
+  pathPrefix: "/Rincon-Del-MaQuinarias",
 
   siteMetadata: {
-    title: `Blog de MaQuiNa1995`,
+    title: `Rincon Del MaQuinarias`,
     author: {
       name: `Christian Muñoz Asón`,
-      summary: `Que vive en Cantabria España `,
+      summary: `tambien conocido como MaQuina1995`,
     },
-    description: `Blog de MaQuiNa1995`,
+    description: `Rincon Del MaQuinarias`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -107,7 +104,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Maqui-blog RSS Feed",
+            title: "Rincon del MaQuinarias RSS Feed",
           },
         ],
       },
@@ -115,8 +112,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `MaQuiNa1995 Blog`,
-        short_name: `Maqui-blog`,
+        name: `El Rincon Del MaQuinarias`,
+        short_name: `Rincon-del_MaQuinarias`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
