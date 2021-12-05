@@ -1,4 +1,2119 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Maqui-blog RSS Feed]]></title><description><![CDATA[Blog de MaQuiNa1995]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Dec 2021 00:42:52 GMT</lastBuildDate><item><title><![CDATA[Indice Github]]></title><description><![CDATA[Java Pruebas técnicas A continuación muestro las distintas pruebas técnicas que tuve que hacer para distintas empresas en el repo de cada…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Indice_Github/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Indice_Github/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Java&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rincon del MaQuinarias RSS Feed]]></title><description><![CDATA[Rincon Del MaQuinarias]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Dec 2021 22:29:31 GMT</lastBuildDate><item><title><![CDATA[Golang Desde Cero]]></title><description><![CDATA[Tabla de contenidos: Instalación Descarga Instalación Verificación de la instalación Configuración del entorno Variables de entorno Windows…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Golang_Desde_Cero/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Golang_Desde_Cero/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#instalaci-n&quot;&gt;Instalación&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#descarga&quot;&gt;Descarga&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#instalaci-n-1&quot;&gt;Instalación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#verificaci-n-de-la-instalaci-n&quot;&gt;Verificación de la instalación&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#configuraci-n-del-entorno&quot;&gt;Configuración del entorno&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#variables-de-entorno&quot;&gt;Variables de entorno&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#windows&quot;&gt;Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#linux&quot;&gt;Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#verificaci-n&quot;&gt;Verificación&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#entorno-de-desarrollo&quot;&gt;Entorno de desarrollo&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#hola-mundo-en-visual-studio&quot;&gt;Hola mundo en Visual studio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#zonas-b-sicas-en-un-archivo-go&quot;&gt;Zonas básicas En un archivo Go&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#paquete&quot;&gt;Paquete&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#import&quot;&gt;Import&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#funci-n-principal&quot;&gt;Función Principal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#variables&quot;&gt;Variables&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#scope-de-variables-y-convenci-n-de-nombres&quot;&gt;Scope de variables y convención de nombres&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#tipos-de-datos-b-sicos&quot;&gt;Tipos de datos básicos&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#enteros&quot;&gt;Enteros&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#signed-int--enteros-&quot;&gt;Signed int (Enteros)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#unsigned-int--enteros-&quot;&gt;Unsigned int (Enteros)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#decimales&quot;&gt;Decimales&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#n-meros-complejos&quot;&gt;Números complejos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#byte&quot;&gt;Byte&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#rune&quot;&gt;Rune&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#utf-8&quot;&gt;UTF-8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#string&quot;&gt;String&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#booleanos&quot;&gt;Booleanos&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#operadores-l-gicos&quot;&gt;Operadores lógicos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#inicializaciones&quot;&gt;Inicializaciones&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#inicializaci-n-completa&quot;&gt;Inicialización Completa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#inicializaci-n-tard-a&quot;&gt;Inicialización Tardía&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#inicializaci-n-abreviada--type-inference-&quot;&gt;Inicialización Abreviada (Type Inference)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#inicializaci-n-m-ltiple&quot;&gt;Inicialización múltiple&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#colecciones&quot;&gt;Colecciones&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#arrays&quot;&gt;Arrays&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#instanciaci-n&quot;&gt;Instanciación&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#forma-completa&quot;&gt;Forma Completa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#forma-elegante&quot;&gt;Forma Elegante&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#declaraci-n-tard-a&quot;&gt;Declaración Tardía&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#punteros-en-arrays&quot;&gt;Punteros en Arrays&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#punteros-en-arrays-1&quot;&gt;Punteros en Arrays&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#slices&quot;&gt;Slices&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#instanciaci-n-1&quot;&gt;Instanciación&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#forma-completa&quot;&gt;Forma completa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#copia-de-un-slice&quot;&gt;Copia de un slice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#copia-de-un-slice-con-cortes&quot;&gt;Copia de un Slice con cortes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#uso-de-make-para-la-instanciaci-n-de-slices&quot;&gt;Uso de make para la instanciación de slices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#funciones-de-los-slice&quot;&gt;Funciones de los Slice&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#adici-n-de-1-elemento--append-&quot;&gt;Adición de 1 elemento (append)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#adici-n-de-2-a-n-elementos--append-&quot;&gt;Adición de 2 a N elementos (append)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#fusi-n-de-slices&quot;&gt;Fusión de slices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#eliminaci-n-de-elementos&quot;&gt;Eliminación de elementos&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#shift--eliminaci-n-de-elementos-por-los-extremos-&quot;&gt;Shift (Eliminación de elementos por los extremos)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#eliminaci-n-de-elementos-centrales&quot;&gt;Eliminación de elementos centrales&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#mapa&quot;&gt;Mapa&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#instanciaci-n-2&quot;&gt;Instanciación&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#forma-completa-1&quot;&gt;Forma completa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#uso-de-make--&quot;&gt;Uso de make()&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#lectura-de-mapas&quot;&gt;Lectura de mapas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#funciones&quot;&gt;Funciones&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#adici-n-de-valores&quot;&gt;Adición de valores&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#eliminaci-n-de-elementos-por-clave&quot;&gt;Eliminación de elementos por clave&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#struct&quot;&gt;Struct&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#declaraci-n&quot;&gt;Declaración&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#declaraci-n-cl-sica&quot;&gt;Declaración clásica&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#struct-an-nimo&quot;&gt;Struct anónimo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#instanciaci-n-3&quot;&gt;Instanciación&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#manera-normal&quot;&gt;Manera normal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#sintaxis-de-posicionamiento&quot;&gt;Sintaxis de posicionamiento&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#composici-n&quot;&gt;Composición&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#tags&quot;&gt;Tags&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#convenciones-de-nombres&quot;&gt;Convenciones de nombres&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#constantes&quot;&gt;Constantes&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#constantes-enumerados&quot;&gt;Constantes enumerados&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#declaraci-n-completa-simple-con-iota&quot;&gt;Declaración completa simple con iota&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#declaraci-n-simple-con-iota&quot;&gt;Declaración simple con iota&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#declaraci-n-simple-con-literales&quot;&gt;Declaración simple con literales&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#multiples-declaraciones-de-bloques-con-iota&quot;&gt;Multiples declaraciones de bloques con iota&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#usos-del-valor-0-con-iota&quot;&gt;Usos del valor 0 con iota&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#descartes-de-valores-con-iota&quot;&gt;Descartes de valores con iota&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#convenciones-de-nombre&quot;&gt;Convenciones de nombre&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#scope-de-variables-y-convenci-n-de-nombres-1&quot;&gt;Scope de variables y convención de nombres&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#nivel-de-paquete&quot;&gt;Nivel de paquete&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#nivel-de-funci-n&quot;&gt;Nivel de función&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#misma-variable-distintos-scope&quot;&gt;Misma variable distintos scope&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#if&quot;&gt;If&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#if-b-sico&quot;&gt;If básico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#if-avanzado&quot;&gt;If avanzado&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#comparadores&quot;&gt;Comparadores&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#llamadas-a-funciones&quot;&gt;Llamadas a funciones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#switch&quot;&gt;Switch&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#switch-simple&quot;&gt;Switch simple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#switch-multiple&quot;&gt;Switch multiple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#switch-avanzado&quot;&gt;Switch avanzado&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#switch-con-condiciones-complejas&quot;&gt;Switch con condiciones complejas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#switch-con-fallthrought&quot;&gt;Switch con fallthrought&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#switch-con-interfaces&quot;&gt;Switch con interfaces&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#for&quot;&gt;For&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#foreach&quot;&gt;ForEach&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#labels&quot;&gt;Labels&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#breaks&quot;&gt;Breaks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#defer&quot;&gt;Defer&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#usos&quot;&gt;Usos&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#problemas&quot;&gt;Problemas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#soluciones&quot;&gt;Soluciones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#llamadas-a-funciones-y-par-metros&quot;&gt;Llamadas a funciones y parámetros&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#panicking&quot;&gt;Panicking&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#provocar-panics&quot;&gt;Provocar panics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#recover&quot;&gt;Recover&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#punteros&quot;&gt;Punteros&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#creaci-n&quot;&gt;Creación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#deferenciaci-n&quot;&gt;Deferenciación&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#funciones-1&quot;&gt;Funciones&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#convenci-n-de-nombres&quot;&gt;Convención de nombres&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#par-metros&quot;&gt;Parámetros&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#punteros-en-par-metros-de-funciones&quot;&gt;Punteros en parámetros de funciones&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#vararg&quot;&gt;Vararg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#funciones-an-nimas&quot;&gt;Funciones anónimas&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#simple&quot;&gt;Simple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#problema-en-entornos-asincronos&quot;&gt;Problema en entornos asincronos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#funciones-como-tipos&quot;&gt;Funciones como tipos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#m-todos&quot;&gt;Métodos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#interfaces&quot;&gt;Interfaces&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#convenci-n-de-nombres-1&quot;&gt;Convención de nombres&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#interfaces-de-interfaces&quot;&gt;Interfaces de interfaces&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Instalación&lt;/h1&gt;
+&lt;h2&gt;Descarga&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://golang.org/dl/&quot;&gt;https://golang.org/dl/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;Ejecuta el msi descargado en el caso de windows o descomprime donde quieras si lo prefieres antes que un instalador, asegurate de que sea el cliente de 64 bits&lt;/p&gt;
+&lt;h2&gt;Verificación de la instalación&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;go version -&gt; go version go1.17.1 windows/386
+where go -&gt; C:\Users\MaQuiNa1995\Herramientas\Go\bin\go.exe&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Configuración del entorno&lt;/h1&gt;
+&lt;h2&gt;Variables de entorno&lt;/h2&gt;
+&lt;h3&gt;Windows&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;GOPATH&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Es la ruta donde tendrás tu Go descargado
+Valor por defecto: %USERPROFILE%\go&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;PATH&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;PATH -&gt; otrasEntradas;%GOPATH%&lt;/p&gt;
+&lt;h3&gt;Linux&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;GOPATH&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Es la ruta donde tendrás tu Go descargado
+Valor por defecto: $HOME/go&lt;/p&gt;
+&lt;h3&gt;Verificación&lt;/h3&gt;
+&lt;p&gt;Al ejecutar el siguiente comando deberías de obtener una respuesta parecida&lt;/p&gt;
+&lt;p&gt;go version -&gt; &lt;code class=&quot;language-text&quot;&gt;go version go1.17.1 windows/386&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Entorno de desarrollo&lt;/h2&gt;
+&lt;p&gt;Como IDE usaremos Visual studio code en el que al entrar te dará la opción de descargar e instalar módulos que puedan sernos útiles como autocompletado y demás&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://az764295.vo.msecnd.net/stable/83bd43bc519d15e50c4272c6cf5c1479df196a4d/VSCodeUserSetup-x64-1.60.1.exe&quot;&gt;Descárgalo aquí desde la página oficial&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cuando lo abrais un pop-up os dará la opción de instalar esos módulos que hablé antes cuando estén todos listos os pondrá en la terminal algo parecido a “you are ready to Go :)”&lt;/p&gt;
+&lt;p&gt;Si habeis instalado el cliente de 32 bits de golang tendreis problemas con el analizador de código y no podreis usarle&lt;/p&gt;
+&lt;h3&gt;Hola mundo en Visual studio&lt;/h3&gt;
+&lt;p&gt;Crearemos un proyecto Golang y del sistema de archivos que nos creará iremos a la carpeta src y crearemos una carpeta adicional será en esta donde crearemos nuestro archivo Main.go con el siguiente contenido&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;package main
+
+import (
+	&quot;fmt&quot;
+)
+
+func main() {
+	fmt.Println(&quot;Hola mundo&quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para ejecutar el programa iremos a la vista de la terminal en nuestro visual studio y como este estará ya ubicado en la carpeta de nuestro proyecto
+solo tendremos que ejecutar el siguiente comando&lt;/p&gt;
+&lt;p&gt;go run .\src\carpetaCreadaPreviamente\Main.go&lt;/p&gt;
+&lt;p&gt;Adicionalmente tambien podeis a una &lt;a href=&quot;https://play.golang.org/&quot;&gt;consola online&lt;/a&gt; y probar allí el mismo código&lt;/p&gt;
+&lt;p&gt;Deberíamos de poder ver nuestro hola mundo&lt;/p&gt;
+&lt;h1&gt;Zonas básicas En un archivo Go&lt;/h1&gt;
+&lt;h2&gt;Paquete&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;package main&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Import&lt;/h2&gt;
+&lt;p&gt;Aqui irían todas las declaraciones de importación sobre librerías de sistema por poner un ejemplo&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import (
+	&quot;fmt&quot;
+	&quot;strconv&quot;
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Función Principal&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+    // Aqui iría el código de nuestro punto de entrada al proyecto
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Variables&lt;/h1&gt;
+&lt;p&gt;En go tenemos diferentes formas de declaración de variables&lt;/p&gt;
+&lt;h2&gt;Scope de variables y convención de nombres&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Pascal case -&gt; Export variables (Variables Globales)&lt;/li&gt;
+&lt;li&gt;Camel Case -&gt; internal variables (Variables de paquete)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Tipos de datos básicos&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://golangbyexample.com/all-data-types-in-golang-with-examples/#Basic_Types&quot;&gt;https://golangbyexample.com/all-data-types-in-golang-with-examples/#Basic_Types&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Enteros&lt;/h3&gt;
+&lt;h4&gt;Signed int (Enteros)&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Tipo&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Tamaño&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;int&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Dependiente De Plataforma&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;int8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8 bits/1 byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;int16&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;16 bits/2 byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;int32&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;32 bits/4 byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;int64&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;64 bits/8 byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;Unsigned int (Enteros)&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Tipo&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Tamaño&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;uint&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Dependiente De Plataforma&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;uint8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8 bits/1 byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;uint16&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;16 bits/2 byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;uint32&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;32 bits/4 byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;uint64&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;64 bits/8 byte&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Decimales&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Tipo&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Tamaño&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;float32&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;32 bits or 4 bytes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;float64&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;64 bits or 8 bytes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Números complejos&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Tipo&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Tamaño&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;complex64&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Parte real e imaginaria son float32&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;complex128&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Parte real e imaginaria son float64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;El tipo complejo por defecto es complex128&lt;/p&gt;
+&lt;h3&gt;Byte&lt;/h3&gt;
+&lt;p&gt;byte es un alias para uint8 vamos que se considera un valor entero de 8 bits y representa un byte (0-255) este a su vez puede representar un caracter ASCII Golang no tiene un tipo char aluso como por ejemplo Java&lt;/p&gt;
+&lt;h3&gt;Rune&lt;/h3&gt;
+&lt;p&gt;rune es un alias para int32 por lo tanto se le considera un entero se usa para representar un &lt;strong&gt;Unicode Code Point&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Unicode es un superconjunto de caracteres ASCII que asigna un número único a cada carácter que existe. Este número único se llama &lt;strong&gt;Unicode Code Point&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Algunos ejemplos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;El dígito 0 se representa como punto Unicode U+0030 (valor decimal – 48)&lt;/li&gt;
+&lt;li&gt;La letra pequeña b se representa como punto Unicode U+0062 (valor decimal – 98)&lt;/li&gt;
+&lt;li&gt;Un símbolo de libra £ se representa como Punto Unicode U+00A3 (Valor decimal – 163)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Puedes aprender mas sobre esto en:
+&lt;a href=&quot;http://www.joelonsoftware.com/articles/Unicode.html&quot;&gt;The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;UTF-8&lt;/h3&gt;
+&lt;p&gt;utf-8 guarda cada Unicode Code Point utilizando 1, 2, 3 o 4 bytes.&lt;/p&gt;
+&lt;p&gt;Los puntos ASCII se almacenan utilizando 1 byte. Es por eso que rune es un alias para int32 porque un Unicode Code Point puede ser de un máximo de 4 bytes en Go, ya que cada cadena está codificada usando utf-8 cada rune está destinada a referirse a un Unicode Code Point.&lt;/p&gt;
+&lt;p&gt;Por ejemplo, si imprime una cadena después de encasillarla en una matriz de runes, imprimirá el Unicode Code Point para cada uno de los caracteres.
+Para la siguiente cadena “0b£” la salida será – [U+0030 U+0062 U+00A3]&lt;/p&gt;
+&lt;h3&gt;String&lt;/h3&gt;
+&lt;p&gt;En go se puede declarar una String con comillas simples y con comillas dobles&lt;/p&gt;
+&lt;h3&gt;Booleanos&lt;/h3&gt;
+&lt;p&gt;Pueden tomar o true o false
+Por defecto su valor es false&lt;/p&gt;
+&lt;h4&gt;Operadores lógicos&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;AND –&gt; &amp;#x26;&amp;#x26;&lt;/li&gt;
+&lt;li&gt;OR  –&gt; ||&lt;/li&gt;
+&lt;li&gt;Negación –&gt; !&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Inicializaciones&lt;/h2&gt;
+&lt;h3&gt;Inicialización Completa&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;var numero int = 1&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Inicialización Tardía&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var numero3 int
+numero3 = 3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Inicialización Abreviada (Type Inference)&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;numero2 := 2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;El único problema de esta forma de declaración es que cuando, por ejemplo tenemos &lt;code class=&quot;language-text&quot;&gt;numero2 := 2.&lt;/code&gt; que representaría un número decimal, es que nos inicializa la variable con &lt;strong&gt;float64&lt;/strong&gt; no hay ninguna forma de crear un &lt;strong&gt;float32&lt;/strong&gt; por esta vía&lt;/p&gt;
+&lt;h3&gt;Inicialización múltiple&lt;/h3&gt;
+&lt;p&gt;Podemos como en otros lenguajes usar la asignación múltiple con cualquier de las 3 formas anteriores&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var nombre, github string = &quot;MaQuiNa&quot;, &quot;https://github.com/MaQuiNa1995&quot;
+numero, numero2 := 1, 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Colecciones&lt;/h2&gt;
+&lt;h3&gt;Arrays&lt;/h3&gt;
+&lt;h4&gt;Instanciación&lt;/h4&gt;
+&lt;h5&gt;Forma Completa&lt;/h5&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones := [3]string{&quot;Caballero Cebolla&quot;, &quot;Ilusionista&quot;, &quot;Francotirador&quot;}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;En esta forma se inicializa de manera completa el array declarando el tamaño y los elementos que lo conforman&lt;/p&gt;
+&lt;h5&gt;Forma Elegante&lt;/h5&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones2 := [...]string{&quot;Caballero Cebolla&quot;, &quot;Ilusionista&quot;, &quot;Francotirador&quot;}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Esta forma es equivalente a la anterior solo que omitiendo el tamaño ya que en este caso resulta dedundante ya que tenemos 3 elementos&lt;/p&gt;
+&lt;p&gt;Hay casos en los que no deberías de utilizar esta forma ya que tendrías que ir 1 a 1 contando manualmente los elementos entre { } entonces solo eligiría esta manera si es visualmente muy fácil saber cuentos elementos conforman el array&lt;/p&gt;
+&lt;h5&gt;Declaración Tardía&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var profesiones3 [3]string
+profesiones3[0] = &quot;Caballero Cebolla&quot;
+profesiones3[1] = &quot;Ilusionista&quot;
+profesiones3[2] = &quot;Francotirador&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;En esta forma dejamos la declaración de los elementos para “mas tarde”&lt;/p&gt;
+&lt;p&gt;Como dato adicional&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Aqui no se pueden usar los […] que utilizamos en la anterior forma&lt;/li&gt;
+&lt;li&gt;Se pueden dejar posiciones vacías en cuyo caso dependiendo del tipo de objeto cogerían el valor por defecto&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Punteros en Arrays&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones := [...]string{&quot;Caballero Cebolla&quot;, &quot;Ilusionista&quot;, &quot;Francotirador&quot;}
+profesionesCopia := profesiones
+profesionesCopia[0] = &quot;Mago Azul&quot;
+fmt.Printf(&quot;Profesiones:       %v\nProfesiones Copia: %v\n&quot;, profesiones, profesionesCopia)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Profesiones:       [Caballero Cebolla Ilusionista Francotirador]
+Profesiones Copia: [Mago Azul Ilusionista Francotirador]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;En Go cada “copia” ya sea por asignación o por el envío de estos a una función genera una nueva copia de estos, en otros lenguajes siempre se apunta a la misma dirección de memoria y si modificas uno el otro tambien se ve afectado, en Go no es asi siempre se crea uno nuevo a no ser que hagas lo siguiente&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones := [...]string{&quot;Caballero Cebolla&quot;, &quot;Ilusionista&quot;, &quot;Francotirador&quot;}
+profesionesCopia := &amp;amp;profesiones
+profesionesCopia[0] = &quot;Domador&quot;
+fmt.Printf(&quot;Profesiones:       %v\nProfesiones Copia: %v\n&quot;, profesiones, profesionesCopia)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Profesiones:       [Domador Ilusionista Francotirador] 
+Profesiones Copia: &amp;amp;[Domador Ilusionista Francotirador]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Con el modificador &amp;#x26; en la asignación le decimos a go que los dos arrays apunten a la misma dirección de memoria por lo tanto si modificas uno, el otro tambien se ve afectado&lt;/p&gt;
+&lt;h4&gt;Punteros en Arrays&lt;/h4&gt;
+&lt;p&gt;Si recuerdas de los arrays si no usábamos el operador &lt;code class=&quot;language-text&quot;&gt;&amp;amp;&lt;/code&gt; no provocabamos que 2 variables apuntasen al mismo hueco de memoria en los slice esto siempre es asi de tal manera que si cambiamos una slice el otro tambien se verá afectado, un ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones := []string{&quot;Caballero Cebolla&quot;, &quot;Ilusionista&quot;, &quot;Francotirador&quot;}
+profesionesCopia := profesiones
+profesionesCopia[0] = &quot;Alquimista&quot;
+fmt.Printf(&quot;Profesiones:       %v\nProfesiones Copia: %v\n&quot;, profesiones, profesionesCopia)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Profesiones:       [Alquimista Ilusionista Francotirador]
+Profesiones Copia: [Alquimista Ilusionista Francotirador]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Slices&lt;/h3&gt;
+&lt;p&gt;Los slice son y tienen la misma funcionalidad que un array con alguna que otra excepción que luego veremos&lt;/p&gt;
+&lt;h4&gt;Instanciación&lt;/h4&gt;
+&lt;h5&gt;Forma completa&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sliceOriginal := []int{1, 2, 3, 4, 5}
+fmt.Printf(&quot;Slice Original: %v\n&quot;, sliceOriginal)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Copia de un slice&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice2 := sliceOriginal[:]
+fmt.Printf(&quot;Slice Copia de Slice Original: %v\n&quot;, slice2)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Copia de un Slice con cortes&lt;/h5&gt;
+&lt;p&gt;Una regla que siguen las siguientes formas dependiendo donde esté el número a la derecha o izquierda o en ambos de &lt;code class=&quot;language-text&quot;&gt;:&lt;/code&gt; Inclusivo:Exclusivo&lt;/p&gt;
+&lt;p&gt;Tambien decir que está nomenclatura tambien se aplica a &lt;code class=&quot;language-text&quot;&gt;Arrays&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice3 := sliceOriginal[3:]  //Se descartan los 3 primeros valores de sliceOriginal
+slice4 := sliceOriginal[:4]  // Se cogen solo los 4 primeros elementos de sliceOriginal
+slice5 := sliceOriginal[2:4] // Se descartan los 2 primeros elementos y se obtienen los siguientes elementos (despues del primer descarte) hasta la posicion X del slice original
+
+fmt.Printf(&quot;Slice Cortado con principio definido: %v\n&quot;, slice3)
+fmt.Printf(&quot;Slice Cortado desde el inicio hasta un final definido: %v\n&quot;, slice4)
+fmt.Printf(&quot;Slice Cortado descartando X elementos y seleccionado Y de los primeros restantes: %v&quot;, slice5)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Uso de make para la instanciación de slices&lt;/h5&gt;
+&lt;p&gt;Podemos usar 2 argumentos&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;tipo -&gt; []int&lt;/li&gt;
+&lt;li&gt;Tamaño -&gt; 4&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice := make([]int, 4)
+fmt.Println(slice)
+fmt.Printf(&quot;Tamaño: %v\n&quot;, len(slice))
+fmt.Printf(&quot;Capacidad: %v\n&quot;, cap(slice))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[0 0 0 0]
+Tamaño: 4
+Capacidad: 4&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Tambien podemos usar 3 argumentos&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;tipo -&gt; []int&lt;/li&gt;
+&lt;li&gt;Tamaño -&gt; 4&lt;/li&gt;
+&lt;li&gt;Capacidad -&gt; 4&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice2 := make([]int, 4, 10)
+fmt.Println(slice2)
+fmt.Printf(&quot;Tamaño: %v\n&quot;, len(slice2))
+fmt.Printf(&quot;Capacidad: %v&quot;, cap(slice2))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[0 0 0 0]   
+Tamaño: 4   
+Capacidad: 10&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Funciones de los Slice&lt;/h4&gt;
+&lt;p&gt;Podemos añadir y quitar elementos de un slice dinámicamente a diferencia de un array no tiene un tamaño predefinido&lt;/p&gt;
+&lt;h5&gt;Adición de 1 elemento (append)&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice := []string{}
+fmt.Println(slice)
+fmt.Printf(&quot;Tamaño: %v\n&quot;, len(slice))
+fmt.Printf(&quot;Capacidad: %v\n&quot;, cap(slice))
+
+slice = append(slice, &quot;Mago del Tiempo&quot;) // Tenemos que igualarlo al slice 
+fmt.Println(slice)
+fmt.Printf(&quot;Tamaño: %v\n&quot;, len(slice))
+fmt.Printf(&quot;Capacidad: %v\n&quot;, cap(slice))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A tener muy en cuenta: cuando un slice tiene capacidad 2 y tamaño 2 (Osea está lleno) y metemos un nuevo elemento la capacidad del slice se doblará en el caso de que el slice fuese su capacidad de 0 pasará a 2&lt;/p&gt;
+&lt;p&gt;Con el siguiente ejemplo se ve muy claro:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice := []string{&quot;Mago del Tiempo&quot;, &quot;Monje&quot;}
+fmt.Println(slice)
+fmt.Printf(&quot;Tamaño: %v\n&quot;, len(slice))
+fmt.Printf(&quot;Capacidad: %v\n&quot;, cap(slice))
+
+slice = append(slice, &quot;Paladín&quot;)
+fmt.Println(slice)
+fmt.Printf(&quot;Tamaño: %v\n&quot;, len(slice))
+fmt.Printf(&quot;Capacidad: %v\n&quot;, cap(slice))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[Mago del Tiempo Monje]
+Tamaño: 2
+Capacidad: 2
+[Mago del Tiempo Monje Paladín]
+Tamaño: 3
+Capacidad: 4 // la capacidad se ha doblado&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Adición de 2 a N elementos (append)&lt;/h5&gt;
+&lt;p&gt;Se pueden añadir de 2 a mas elementos a un slice añadiendo en el append mas argumentos:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice := []string{&quot;Mago del Tiempo&quot;, &quot;Monje&quot;}
+slice = append(slice, &quot;Paladín&quot;,&quot;Soldado&quot;,&quot;Dragontino&quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Fusión de slices&lt;/h5&gt;
+&lt;p&gt;Podemos fusionar slices ya sea por variable o porque se ha instanciado directamente uno en el propio append&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice := []string{&quot;Mago del Tiempo&quot;, &quot;Monje&quot;}
+slice2 := []string{&quot;Paladín&quot;, &quot;Soldado&quot;, &quot;Dragontino&quot;}
+
+slice = append(slice, slice2...)                         // Fusión por variable
+slice = append(slice, []string{&quot;Domador&quot;, &quot;Cazador&quot;}...) // fusión por slice instanciado&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Eliminación de elementos&lt;/h4&gt;
+&lt;p&gt;Se pueden elemininar elementos de un slice de distintas maneras&lt;/p&gt;
+&lt;h5&gt;Shift (Eliminación de elementos por los extremos)&lt;/h5&gt;
+&lt;p&gt;Con esta técnica crearíamos un nuevo array omitiendo valores del slice original&lt;/p&gt;
+&lt;p&gt;Cortar por el principio&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice := []string{&quot;Mago del Tiempo&quot;, &quot;Monje&quot;}
+// Crearíamos un nuevo slice omitiendo el primer elemento de &quot;slice&quot;
+slice2 := slice[1:]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Cortar por el final&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice := []string{&quot;Mago del Tiempo&quot;, &quot;Monje&quot;}
+// Crearíamos un nuevo slice omitiendo el último elemento del original
+slice2 := slice[:len(slice)-1]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Eliminación de elementos centrales&lt;/h5&gt;
+&lt;p&gt;Aqui las cosas se ponen un poco espinosas teniendo que hacer nuevos slices de las partes del slice original, se ve mejor visualmente con un ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice := []string{&quot;Mago del Tiempo&quot;, &quot;Monje&quot;, &quot;Paladín&quot;, &quot;Elementalista&quot;, &quot;Esgrimista&quot;}
+
+// Crearíamos un nuevo slice omitiendo el último elemento del original
+// slice[:2] -&gt; crea un array con: Mago del Tiempo Monje
+// slice[4:]... -&gt; añade a ese array creado los elementos resultantes de descartar 4 elementos del slice original
+slice2 := append(slice[:2], slice[4:]...)
+
+// imprime: [Mago del Tiempo Monje Esgrimista]
+// se han eliminado los elementos centrales: Paladín y Elementalista
+fmt.Print(slice2)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Mapa&lt;/h3&gt;
+&lt;p&gt;Consiste en un par de valores primero la key y luego el value ambos pueden tener cualquier tipo&lt;/p&gt;
+&lt;p&gt;A tener en cuenta los mapas apuntan siempre a la misma referencia asique si lo pasamos a una función y manipulamosese mapa fuera de la función ese objeto tambien se verá afectado por los cambios&lt;/p&gt;
+&lt;h4&gt;Instanciación&lt;/h4&gt;
+&lt;h5&gt;Forma completa&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// map[tipo de la key] tipo del value
+profesiones := map[int]string{
+	1: &quot;Soldado&quot;,
+	2: &quot;Paladín&quot;,
+	3: &quot;Dragontino&quot;,
+	4: &quot;Lancero&quot;,
+}
+fmt.Println(profesiones)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Uso de make()&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones2 := make(map[int]string)
+fmt.Println(profesiones2)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Lectura de mapas&lt;/h4&gt;
+&lt;p&gt;Se suelen hacer por key para obtener el value de tal manera:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones := map[int]string{
+	675: &quot;Soldado&quot;,
+	432: &quot;Paladín&quot;,
+	321: &quot;Dragontino&quot;,
+	968: &quot;Lancero&quot;,
+}
+// no imprimiría nada ya que no existe ninguna key que valga 3
+fmt.Println(profesiones[3]) 
+// En cambio esto si que imprimiría Dragontino porque el valor 321 existe de key
+fmt.Println(profesiones[321])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Tenemos otra forma de leer entradas de un mapa leyendo directamente el par o la key del  mismo&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones := map[int]string{
+	675: &quot;Soldado&quot;,
+	432: &quot;Paladín&quot;,
+	321: &quot;Dragontino&quot;,
+	968: &quot;Lancero&quot;,
+}
+trabajo, ok := profesiones[675]
+// 	    	Soldado true
+fmt.Println(trabajo, ok)
+trabajo2, ok2 := profesiones[999]
+//                    false
+fmt.Println(trabajo2, ok2)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;trabajo -&gt; value del mapa
+ok -&gt; booleano indicando la existencia en el mapa de esa key (&lt;code class=&quot;language-text&quot;&gt;profesiones[key]&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;En el caso de que solo pongamos uno de los 2 sacaríamos el value de esa key&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;trabajo := profesiones[675]
+fmt.Println(trabajo)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Tambien podemos descartar el valor y quedarnos con el booleano de si existe o no:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;_ , ok := profesiones[675]
+fmt.Println(ok)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A tener en cuenta si sacamos algo que no existe:
+key -&gt; el valor por defecto (String = ” ” y numeros = 0)
+value -&gt; false&lt;/p&gt;
+&lt;h4&gt;Funciones&lt;/h4&gt;
+&lt;p&gt;como en los arrays aqui tambien tenemos la función len() para ver el tamaño del mapa&lt;/p&gt;
+&lt;h4&gt;Adición de valores&lt;/h4&gt;
+&lt;p&gt;Podemos añadir valores como se puede observar aqui:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones := map[int]string{
+	675: &quot;Soldado&quot;,
+	432: &quot;Paladín&quot;,
+	321: &quot;Dragontino&quot;,
+	968: &quot;Lancero&quot;,
+}
+// No sacaría nada
+fmt.Println(profesiones[6])
+profesiones[6] = &quot;Samurai&quot;
+// Imprimiría Samurai ya que ahora si está en el mapa
+fmt.Println(profesiones[6])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Una cosa al tener en cuenta es que cuando añadimos un elemento el mapa puede cambiar totalmente la ordenación&lt;/p&gt;
+&lt;h4&gt;Eliminación de elementos por clave&lt;/h4&gt;
+&lt;p&gt;Podemos usar la funcion delete para eliminar entradas del mapa por id, un ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones := map[int]string{
+	675: &quot;Soldado&quot;,
+	432: &quot;Paladín&quot;,
+	321: &quot;Dragontino&quot;,
+	968: &quot;Lancero&quot;,
+}
+// mapa , id de la entrada a eliminar
+delete(profesiones, 432)
+fmt.Println(profesiones)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Struct&lt;/h3&gt;
+&lt;p&gt;Viene a referirse a objetos en la vida cotidiana, lo que vendría siendo una clase en java por ejemplo&lt;/p&gt;
+&lt;p&gt;Copias de ese struct no apuntan a la misma referencia por lo que si cambias una la otra no se ve afectada para que sean iguales debemos usar ”&amp;#x26;” para indicar que esas 2 variables aputan a la misma referencia, es tal cual se hace en Arrays&lt;/p&gt;
+&lt;h4&gt;Declaración&lt;/h4&gt;
+&lt;p&gt;Debemos tener los struct a nivel de paquete&lt;/p&gt;
+&lt;h5&gt;Declaración clásica&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type Tecnica struct {
+	nivelRequerido int
+	nombre         string
+	mana           int
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Struct anónimo&lt;/h5&gt;
+&lt;p&gt;Se puede declarar un struct directamente en una función&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;tecnica := struct{ nivelRequerido int }{nivelRequerido: 50}
+fmt.Print(tecnica)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Instanciación&lt;/h4&gt;
+&lt;h5&gt;Manera normal&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;tecnica := Tecnica{
+	nivelRequerido: 10,
+	nombre:         &quot;Última Pesadilla&quot;,
+	mana:           40,
+}
+fmt.Print(tecnica)               // Si queremos consultar todos los valores del struct
+fmt.Print(&quot;\n&quot; + tecnica.nombre) // Si queremos consultar un valor en específico&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Sintaxis de posicionamiento&lt;/h5&gt;
+&lt;p&gt;Hay otra manera de instanciar un struct eliminando los nombres de los campos en este cada atributo corresponde exactamente a la posicion de los campos del struct a esta técnica se le llama “Positional Syntax”&lt;/p&gt;
+&lt;p&gt;no es recomendable su uso por razones de mantenibilidad ya que si cambias el orden de los campos o añades otro lo vas a tener dificil para mantenerlo&lt;/p&gt;
+&lt;p&gt;un ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;tecnica := Tecnica{
+	10,                 // Corresponde con la 1º posición del struct nivelRequerido
+	&quot;Última Pesadilla&quot;, // nombre
+	40,                 //mana
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Composición&lt;/h4&gt;
+&lt;p&gt;En go no existe la herencia pero tenemos algo parecido usaremos el “embedding”&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type Magia struct {
+	mana int
+}
+
+type MagiaNegra struct {
+	Magia
+	danno int
+}
+
+func main() {
+	magiaNegra := MagiaNegra{}
+	magiaNegra.mana = 10
+	magiaNegra.danno = 500
+	// {{10} 500}
+	fmt.Println(magiaNegra)
+	// 10
+	fmt.Println(magiaNegra.mana)
+	// 500
+	fmt.Println(magiaNegra.danno)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;En otros lenguajes tradicionales tendríamos una herencia de magia negra con magia, pero en Go tendríamos que embeber Magia dentro de Magia negra&lt;/p&gt;
+&lt;h4&gt;Tags&lt;/h4&gt;
+&lt;p&gt;Los tags son usados para añadir constraints o limitaciones esto no actua directamente sobre el struct sino que es usado por frameworks de terceros o uno custom que haga uso de esa información para cierto fin usando el paquete de reflection&lt;/p&gt;
+&lt;p&gt;Básicamente es añadir metadatos a los campos de un struct para un framework ya sea de terceros o custom use esa información para validar algo o saber como des-serializar un json xml etc&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type Tecnica struct {
+	nivelRequerido int
+	nombre         string `required,max:&quot;10&quot;`
+	mana           int
+}
+
+func main() {
+	tecnicaReflection := reflect.TypeOf(Tecnica{})
+	campo, _ := tecnicaReflection.FieldByName(&quot;nombre&quot;)
+	// required,max:&quot;10&quot;
+	fmt.Print(campo.Tag)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Convenciones de nombres&lt;/h4&gt;
+&lt;p&gt;Al igual que las variables si ponemos mayúscula la primera letra querrá decir que están expuestas a toda la aplicación pero en cambio si está en minúscula estará disponible a nivel de paquete solamente, usaremos pascal naming&lt;/p&gt;
+&lt;h2&gt;Constantes&lt;/h2&gt;
+&lt;p&gt;Van precedidas de la palabra const&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;const constante string = &quot;constante&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;const constante = &quot;constante&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Como dato curioso en otros lenguajes tipo java puedes tener asignacioens de constantes que dependan en la ejecución de una función por ejemplo es decir que se resuelvan en tiempo de ejecución , en Golang eso no se puede pero sin embargo las operaciones matemáticas entre literales o constantes si que están permitidas&lt;/p&gt;
+&lt;p&gt;A nivel de compilador:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Son inmutables puede aplicarse el “shadow”&lt;/li&gt;
+&lt;li&gt;Son reemplazadas por el compilador en tiempo de compilación&lt;/li&gt;
+&lt;li&gt;El valor debe poder ser calculado en tiempo de compilación&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const(
+	numero1 = 1
+	numero2 = 2
+	numero3 = numero1 + numero2 // valdría 3
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Y como último dato importante no se puede hacer una constante de una &lt;strong&gt;colección&lt;/strong&gt;, estos &lt;strong&gt;siempre serán variables&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Constantes enumerados&lt;/h3&gt;
+&lt;p&gt;Suelen ir a nivel de paquete y mas raramente a nivel de función (aunque no deberías)&lt;/p&gt;
+&lt;h4&gt;Declaración completa simple con iota&lt;/h4&gt;
+&lt;p&gt;puedes usar a nivel de paquete la siguiente forma de declarar una enumeracion de constantes&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const (
+	constanteEnumerada  = iota // valdría 0
+	constanteEnumerada2 = iota // valdría 1
+	constanteEnumerada3 = iota // valdría 2
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;En este caos al usar iota este actua como un contador que empieza desde 0 y va incrementando su valor en 1&lt;/p&gt;
+&lt;h4&gt;Declaración simple con iota&lt;/h4&gt;
+&lt;p&gt;Si quitamos el iota de la constante 2 y 3 tendríamos el mismo resultado ya que el compilador de go asigna a las constantes que no están inicializadas explicitamente el ultimo valor seteado de tal manera&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const (
+	constanteEnumerada  = iota // valdría 0
+	constanteEnumerada2        // valdría 1
+	constanteEnumerada3        // valdría 2
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Declaración simple con literales&lt;/h4&gt;
+&lt;p&gt;Ahora si en vez de usar iota usamos un literal todas las constantes por debajo de esa tendrán ese valor hasta que se setee otro literal de tal manera&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const (
+	constanteEnumerada = 1  // Valdría 1
+	constanteEnumerada2     // Valdría 1
+	constanteEnumerada3 = 2 // Valdría 2
+	constanteEnumerada4     // Valdría 2
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Multiples declaraciones de bloques con iota&lt;/h4&gt;
+&lt;p&gt;Ahora bien si tenemos por ejemplo 2 bloques de constantes y usamos iota en los 2 iota el valor se reiniciara para cada bloque (Osea que el scope de iota esta ligado a cada bloque de constantes ) de tal manera&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const (
+	constanteEnumerada = iota  // valdría 0
+	constanteEnumerada2        // valdría 1
+)
+
+const (
+	constanteEnumerada3 = iota // valdría 0
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Recuerda que las operacioens matemáticas entre constantes o literales están permitidas asique podríamos hacer algo parecido a esto&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const (
+	constanteEnumerada = iota + 5  // valdría 5
+	constanteEnumerada2            // valdría 6 
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;o algo un poco mas útil sería aprobechar esa funcionlidad para hacer potencias a traves del operador bitwise (&amp;#x3C;&amp;#x3C;) como dijimos antes no se pueden llamar a funciones y en Go para hacer el tema de potencias necesitas usar la librería de math por lo tanto para poder hacer potencias tendríamos algo como esto:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const (
+	_  = iota
+	KB = 1 &amp;lt;&amp;lt; (10 * iota) // Con esto conseguimos una potencia 10^1
+	MB					  // Con esto conseguimos una potencia 10^2 etc
+	GB
+	TB
+	PB
+	EB
+	ZB
+	YB
+)
+
+func main() {
+	// Aqui tenemos un decimal que representa el peso de un fichero
+	fileSize := 4000000000.
+	/*
+		Con el Printf aplicamos cierto formato
+		%.2f -&gt; decimal de precisión 2
+		concatenado con &quot; GB&quot;
+	*/
+	fmt.Printf(&quot;%.2f GB&quot;, fileSize/GB) // Imprime 3.73 GB
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Tambien podrías usar los operadores Shift (&gt;&gt;)&lt;/p&gt;
+&lt;h4&gt;Usos del valor 0 con iota&lt;/h4&gt;
+&lt;p&gt;Un buen caso para usar las constantes enumeradas sería:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const (
+	especialistaError = iota
+	especialistaGato
+	especialistaPerro
+	especialistaHamster
+)
+
+func main() {
+	var tipoEspecialista int
+	fmt.Println(tipoEspecialista == especialistaError) // True
+
+	tipoEspecialista = 1
+	fmt.Println(tipoEspecialista == especialistaGato) // True
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Descartes de valores con iota&lt;/h4&gt;
+&lt;p&gt;podemos descartar un valor generado por iota usando &lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt; un ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const (
+	_ = iota			// Descartamos el valor 0
+	especialistaGato	// Valdría 1
+	especialistaPerro	// Valdría 2
+	especialistaHamster // Valdría 3
+)
+
+func main() {
+	tipoEspecialista := 1
+	fmt.Println(tipoEspecialista == especialistaGato) // True
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Podemos descartar multiples valores&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const (
+	_                = iota // Descartamos el valor 0
+	_                = iota // Descartamos el valor 1
+	especialistaGato        // Valdría 2
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;En el que para verificar que una constante no está inicializada usamos la constante &lt;code class=&quot;language-text&quot;&gt;especialistaError&lt;/code&gt; que vale 0&lt;/p&gt;
+&lt;h3&gt;Convenciones de nombre&lt;/h3&gt;
+&lt;p&gt;En otros lengajes verías nombres parecido a esto: CONSTANTE_PI sin embargo en go la convención es la misma que con las variables para el mismo caso en go sería constantePi si queremos que solo sea accesible desde ese paquete o ConstantePi para que sea accesible globalmente (esto aplicado a variables a nivel de paquete las de nivel de función serían con minúscula siempre)&lt;/p&gt;
+&lt;h1&gt;Scope de variables y convención de nombres&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Pascal case -&gt; Export variables (Variables Globales)&lt;/li&gt;
+&lt;li&gt;Camel Case -&gt; internal variables (Variables de paquete)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Nivel de paquete&lt;/h2&gt;
+&lt;p&gt;En go las variables que estén a nivel de paquete&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Si empiezan por mayúscula -&gt; &lt;code class=&quot;language-text&quot;&gt;var Numero int 5&lt;/code&gt; serán accesibles por todos&lt;/li&gt;
+&lt;li&gt;Si empiezan por minúscula -&gt; &lt;code class=&quot;language-text&quot;&gt;var numero int 5&lt;/code&gt; será accesible solo en ese paquete&lt;/li&gt;
+&lt;li&gt;Capitalización de acrónimos -&gt; si usamos algún acrónimo este debe estar en mayúscula var direccionHTTP string = ”&lt;a href=&quot;http://localhost:25565&quot;&gt;http://localhost:25565&lt;/a&gt;”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Nivel de función&lt;/h2&gt;
+&lt;p&gt;En go las variables de función solo estarán disponibles para los miembros de la misma función y si una variable se llama de la misma forma que una a nivel de paquete, la que está a nivel de función será la que se use (a esto se le llama Shadow que explicaremos en mas detalle en el siguiente apartado)&lt;/p&gt;
+&lt;p&gt;Esto no solo aplica a los nombres sino tambien al tipo&lt;/p&gt;
+&lt;h2&gt;Misma variable distintos scope&lt;/h2&gt;
+&lt;p&gt;En go se puede tener distintas variables con el mismo nombre siempre que estas estén en distintos scope el orden de preferencia que tiene Go sobre esto cuando por ejemplo lees el valor de una variable es que en este caso concreto la variable mas cercana coge precendencia&lt;/p&gt;
+&lt;p&gt;Imagínate que tienes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Una variable numero con valor 0 a nivel de paquete&lt;/li&gt;
+&lt;li&gt;Otra que se llame igual con valor 2 a nivel de función&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;si por ejemplo en esa función lees el valor de numero el orden de preferencia hace que leas el valor 2 ya que está mas cercana (de hecho está en el mismo bloque) a esto se le llama “variable shadowning”&lt;/p&gt;
+&lt;p&gt;Por resumir y que quede claro el shadowning es cuando tenemos la misma variable en distintos scopes entonces la forma de determinar con cual vamos a interactuar es la que mas cercana esté a donde se está usando por ejemplo un &lt;code class=&quot;language-text&quot;&gt;fmt.Println(numero)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Con esta técnica tambien se puede hacer “shadow” a un tipo de las variables de distintos scopes de la misma forma que de los valores&lt;/p&gt;
+&lt;h1&gt;If&lt;/h1&gt;
+&lt;h2&gt;If básico&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if condicion {
+	fmt.Print(&quot;La condicion es afirmativa&quot;)
+} else if condicion &amp;amp;&amp;amp; otraCondicion {
+	fmt.Print(&quot;Las 2 condiciones son afirmativas&quot;)
+} else {
+	fmt.Print(&quot;La condicion es negativa&quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;If avanzado&lt;/h2&gt;
+&lt;p&gt;Podemos usar un return de varios valores en la condición y usarlo tanto dentro del if como en la condición como por ejemplo la variable ok que dictamina si la key con valor &lt;code class=&quot;language-text&quot;&gt;675 -&gt; osea la variable id&lt;/code&gt; está en el mapa &lt;code class=&quot;language-text&quot;&gt;profesiones&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Luego dento del if usamos la variable trabajo que lleva el valor de la key con valor 675 en el mapa&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones := map[int]string{
+	675: &quot;Soldado&quot;,
+	432: &quot;Paladín&quot;,
+	321: &quot;Dragontino&quot;,
+	968: &quot;Lancero&quot;,
+}
+
+id := 675
+if trabajo, ok := profesiones[id]; ok {
+	fmt.Printf(&quot;Trabajo con id: %v y value: %v&quot;, id, trabajo)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Comparadores&lt;/h3&gt;
+&lt;p&gt;En Go se pueden usar todos operadores habituales de la programación &lt;code class=&quot;language-text&quot;&gt;&amp;amp; | &amp;lt; &gt; ==&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Llamadas a funciones&lt;/h3&gt;
+&lt;p&gt;En go las condiciones tambien pueden ser el return de una función&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+
+	if createCondition() == false {
+		fmt.Print(&quot;La condición es falsa&quot;)
+	}
+}
+
+func createCondition() bool {
+	fmt.Print(&quot;Retornando condición&quot;)
+	return true
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Switch&lt;/h1&gt;
+&lt;p&gt;Los statements que pueden ir dentro y por lo tanto se ejecutarian en cada case pueden ser de 0 a N de tal manera podríamos tener mas de 1 statement en un case un ejemplo muy simple&lt;/p&gt;
+&lt;p&gt;Tambien podemos hacer uso de break si por cualquier razón en un caso específico no queremos ejecutar cierta parte del switch poniendo un &lt;code class=&quot;language-text&quot;&gt;break&lt;/code&gt; en el ejemplo no va a tener mucho sentido pero esto junto a un if por ejemplo si que podría llegar a tener sentido&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;switch {
+case 1:
+	fmt.Print(&quot;Puedo tener mas de 1 statement entre cases&quot;)
+	fmt.Print(&quot;Y pertenecerían al mismo case en este caso del valor numero &gt; 0&quot;)
+	break
+	fmt.Print(&quot;Esto o se ejecuta ya que esta debajo de un break&quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Switch simple&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;numero := 1
+switch numero {
+
+case 1:
+	fmt.Print(&quot;Uno&quot;)
+case 2:
+	fmt.Print(&quot;Dos&quot;)
+default:
+	fmt.Print(&quot;Ni 1 ni 2&quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Switch multiple&lt;/h2&gt;
+&lt;p&gt;Podemos concatenar condiciones en un mismo case&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;numero := 1
+switch numero {
+case 1, 2:
+	fmt.Print(&quot;Uno o Dos&quot;)
+default:
+	fmt.Print(&quot;Ni 1 ni 2&quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A tener en cuenta que en los switch no puede haber valores duplicados es decir que 2 cases distintos tengan el mismo valor te daría un syntax error&lt;/p&gt;
+&lt;h2&gt;Switch avanzado&lt;/h2&gt;
+&lt;p&gt;Al igual que con los if podemos definir una variable dentro del switch directamente y evaluar ese resultado&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Definimos una variable directamente en el switch y calculamos su valor -&gt;  2 + 1 = 3
+switch suma := 2 + 1; suma {
+case 1, 2:
+	fmt.Print(&quot;Uno o Dos&quot;)
+default:
+	fmt.Print(&quot;Ni 1 ni 2&quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Switch con condiciones complejas&lt;/h2&gt;
+&lt;p&gt;Podemos usar condiciones complejas en nuestros cases un ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;numero := 0
+switch {
+case numero &gt; 0:
+	fmt.Print(&quot;Mayor que cero&quot;)
+case numero &amp;lt; 0:
+	fmt.Print(&quot;Menor que cero&quot;)
+default:
+	fmt.Print(&quot;Es cero&quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;en este tipo de switch los cases pueden hacer overlapping ya que puede que 2 cases sean true para cierta condición en estos casos el que antes de evalúe tiene preferencia sobre el resto&lt;/p&gt;
+&lt;h2&gt;Switch con fallthrought&lt;/h2&gt;
+&lt;p&gt;A diferencia de java no hay falltrought de manera por defecto, tenemos que indicarlo a traves de &lt;code class=&quot;language-text&quot;&gt;fallthrough&lt;/code&gt; al final de los statement del case&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;numero := 1
+
+switch {
+case numero &gt; 0:
+	fmt.Println(&quot;Uno&quot;)
+	// Esto haría que se ejecutase el siguiente case aunque el mismo sea false
+	fallthrough
+case numero &gt; 5: // Esto es false ya que numero es = 1
+	fmt.Println(&quot;Cinco&quot;)
+default:
+	fmt.Println(&quot;Ni 1 ni 5&quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pero sin embargo la consola nos muestra:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Uno
+Cinco&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Switch con interfaces&lt;/h2&gt;
+&lt;p&gt;Podemos usar interfaces para por ejemplo saber de que tipo es un valor&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var condicion interface{} = 1 // podemos asignar cualquier valor de los aprendidos en este tutorial
+
+switch condicion.(type) { // Conseguiríamos el type de la interfaz
+case int, int8, int16, int32, int64:
+	fmt.Print(&quot;Es un entero&quot;)  // Se ejecutaría este case
+case float32, float64:
+	fmt.Print(&quot;Es un decimal&quot;)
+case string:
+	fmt.Print(&quot;Es una cadena de texto&quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;For&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;for i := 1; i &amp;lt; 6; i++ {
+	// Imprimiría en consola 1 2 3 4 5 
+	fmt.Print(i)
+	fmt.Print(&quot; &quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;ForEach&lt;/h1&gt;
+&lt;p&gt;podemos manejar individualmente los valores de un slice o array por ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice := []int{1, 2, 3}
+for index, valor := range slice {
+	fmt.Print(index, valor)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Si queremos omitir el index usaremos el &lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;slice := []int{1, 2, 3}
+for _, value := range slice {
+	fmt.Print(value)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;para mapas podremos obtener tanto el value como la key del mapa aunque siempre podremos omitir alguno de los mismos con &lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profesiones := map[int]string{
+	675: &quot;Soldado&quot;,
+	432: &quot;Paladín&quot;,
+	321: &quot;Dragontino&quot;,
+	968: &quot;Lancero&quot;,
+}
+
+for index, value := range profesiones {
+	fmt.Println(index, value)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;tambien podremos usar strings&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cadena := &quot;HolaMundo&quot;
+fmt.Println(&quot;Índice | Valor Unicode | Valor en String&quot;)
+for index, value := range cadena {
+	fmt.Println(index, value, string(value))
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;en este caso tendremos la siguiente salida (Lo ordeno en una tabla para que se vea mejor)&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Indice&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Valor unicode&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Valor en String&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;72&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;H&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;111&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;o&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;108&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;l&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;3&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;97&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;4&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;77&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;M&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;117&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;u&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;6&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;110&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;n&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;100&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;d&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;111&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;o&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1&gt;Labels&lt;/h1&gt;
+&lt;h2&gt;Breaks&lt;/h2&gt;
+&lt;p&gt;Al igual que java se pueden hacer uso de las label para por ejemplo en el caso de que tengamos 2 fors&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;	for i := 1; i &amp;lt; 6; i++ {
+		for j := 0; j &amp;lt; 6; j++ {
+			break // esto rompería la ejecución del for con la variable j
+		}
+	}
+label2:
+	for i := 1; i &amp;lt; 6; i++ {
+		for j := 0; j &amp;lt; 6; j++ {
+			// en cambio este rompería la ejecución de todo
+			// ya que la label &quot;label2&quot; está por encima de los 2 for
+			break label2 
+		}
+	}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Defer&lt;/h1&gt;
+&lt;p&gt;defer es la técnica por la cual el statement que vaya precedido de él se ejecutará el último inmediatamente antes del return de la función (en el caso de que no haya return será el ultimo statement en ejecutarse) un ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;fmt.Println(1)
+defer fmt.Println(2) // statement deferido
+fmt.Println(3)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1
+3
+2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ahora que pasa si tenemos varios statements deferidos&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;defer fmt.Println(1)
+defer fmt.Println(2)
+defer fmt.Println(3)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;3
+2
+1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;El comportamiento que nos vendría a la cabeza que tendría que tener este código debería de ser 1 2 3 ya que se ejecuta todo al final del método, pero en cambio obtenemos justo lo contrario&lt;/p&gt;
+&lt;p&gt;Esto es debido a que los statements deferidos funcionan por FILO (First In Last Out) imagina una pila de libros y ten presente la regla de que solo puedes coger 1 a la vez si apilas 3 libros libro1 libro2 y libro3 en ese orden concreto cuando quieras coger esos libros el primero que recogerás es el libro3&lt;/p&gt;
+&lt;p&gt;Ocurre lo mismo con los statements deferidos el ultimo que entra es el primero en salir&lt;/p&gt;
+&lt;h2&gt;Usos&lt;/h2&gt;
+&lt;p&gt;Los usos de esto podría ser por ejemplo el cierre de recursos , podrías tener al final del método el cierre de los mismos pero podrías olvidarte de todos los recursos que tienes que cerrar haciendo defer asociarías el abrir del recurso con el cerrar del mismo inmediatamente despues (aunque realmente lo ejecutarías al final de la función)&lt;/p&gt;
+&lt;h3&gt;Problemas&lt;/h3&gt;
+&lt;p&gt;Una cosa a tener en cuenta es que por ejemplo si estás en un for loop y el usar el defer para cerrar un recurso que esté en ese for cuando realmente se va a ejecutar ese statement es al final de la función lo del for loop podrías tener miles de recursos abiertos a la vez así (que luego se cerrarían pero no deberías ya que podría dar lugar a fallos o problemas de rendimiento)&lt;/p&gt;
+&lt;h3&gt;Soluciones&lt;/h3&gt;
+&lt;p&gt;Una opción sería delegar ese cierre de recurso a una función y hacer ahí el defer&lt;/p&gt;
+&lt;h2&gt;Llamadas a funciones y parámetros&lt;/h2&gt;
+&lt;p&gt;Según lo que vimos anteriormente podrías pensar que este codigo imprimiría &lt;code class=&quot;language-text&quot;&gt;final&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;variable := &quot;comienzo&quot;
+defer fmt.Print(variable)
+variable = &quot;final&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pero la realidad es que imprimiría &lt;code class=&quot;language-text&quot;&gt;comienzo&lt;/code&gt; esto es debido a que en las llamadas a funciones deferidas lo que se va a ejecutar coge los valores de los argumentos que tuviera en ese momento esa variable de tal manera que en nuestro ejemplo cogería el valor &lt;code class=&quot;language-text&quot;&gt;comienzo&lt;/code&gt;&lt;/p&gt;
+&lt;h1&gt;Panicking&lt;/h1&gt;
+&lt;p&gt;Esto es por ejemplo un erro grave en Go , no hay muchos casos por lo que se pueda dar un error grave del que la aplicación no sepa como seguir por ejemplo el típico caso sería una petición a un servidor remoto en el que no se recibe respuesta alguna , esto no es causa de un panic ya que tendremos un valor de error para interpretar en este caso por ejemplo un 500 o un 404 por decir algunos&lt;/p&gt;
+&lt;p&gt;Un ejemplo de panic sería que estás intentand leer una plantilla para generar una página web pues bien si no se puede leer esa plantilla no se puede seguir porque sería un error grave del que no puedes recuperarte&lt;/p&gt;
+&lt;p&gt;por otro lado si vas a abrir un fichero de log y no puedes abrirle ese no es un panic ya que la ejecución puede seguir&lt;/p&gt;
+&lt;p&gt;En go un error grave es lo que se le llama un panic ya que la aplicación no sabe que hacer despues de eso:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;	numero1, numero2 := 1, 0
+	division := numero1 / numero2
+	fmt.Print(division)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;panic: runtime error: integer divide by zero
+
+goroutine 1 [running]:
+main.main()
+        C:/Users/MaQuiNa1995/workspace/Go_Workspace/HolaMundo/src/maquina1995/hola.mundo/Main.go:11 +0x11
+exit status 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Provocar panics&lt;/h2&gt;
+&lt;p&gt;Podemos probecar errores manualmente gracias a la funcion panic()&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;fmt.Println(&quot;Comienzo&quot;)
+panic(&quot;Algo malo ha pasado&quot;)
+// el IDE nos avisará de que este statement no va a ejecutarse
+fmt.Println(&quot;Fin&quot;) &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Comienzo
+panic: Algo malo ha pasado
+
+goroutine 1 [running]:
+main.main()
+        C:/Users/MaQuiNa1995/workspace/Go_Workspace/HolaMundo/src/maquina1995/hola.mundo/Main.go:14 +0x65
+exit status 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Un tema importante es que el panic será ejecutado justo despues de los statements que hayan sido deferidos asique nuestros posibles cierres de recursos que tengamos deferidos podrán ejecutarse normalmente&lt;/p&gt;
+&lt;h1&gt;Recover&lt;/h1&gt;
+&lt;p&gt;Es usado para salvar un error grave (panic) , solo es útil en statements que estén deferidos ya que como hablamos anteriormente estos se ejecutan antes del panic por lo tanto podrán arreglar el error&lt;/p&gt;
+&lt;p&gt;Cuando se produce un error la función que se estuviera ejecutando en ese momento para su ejecución pero si salvas ese error las funciones padre que hayan llamado a esta podrían seguir la ejecución&lt;/p&gt;
+&lt;p&gt;un ejemplo de un manejo de excepción:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+	fmt.Print(&quot;Empieza el main&quot;)
+	numero := -1
+	start(numero)
+	fmt.Printf(&quot;Acaba el main&quot;)
+}
+
+func start(numero int) {
+
+	// Requiere que esté deferida para
+	// que pueda manejar la excepción
+	// tambien puede ser una función anónima
+	defer manejarExcepcion()
+	if numero == 0 {
+		panic(&quot;Error: el valor de número no puede ser cero&quot;)
+	}
+	fmt.Printf(&quot;El número es %v\n&quot;, numero)
+}
+
+func manejarExcepcion() {
+	if exception := recover(); exception != nil {
+		fmt.Println(&quot;Manejando la excepción: &quot;, exception)
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Punteros&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;numero1 := 1
+// aunque se asigne a numero2 apuntan
+// a distintas direcciones de memoria
+numero2 := numero1
+fmt.Println(numero1, numero2) // 1 1
+
+// al no apuntar a la misma dirección de memoria
+// aunque asignemos el valor 0 numero2 no se ve afectada
+numero1 = 8
+fmt.Println(numero1, numero2) // 8 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Creación&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var numero1 int = 1
+// Hemos creado un puntero para indicar
+// que numero2 va a tener un puntero de tipo integer
+// a la variable numero 2
+var numero2 *int = &amp;amp;numero1
+fmt.Println(numero1, numero2) // 1 0xc0000aa058
+
+// Ahora al apuntar a la misma referencia de memoria
+// Al cambiar uno el otro tambien se ve reflejado
+numero1 = 8
+fmt.Println(numero1, numero2) // 8 0xc0000aa058&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ahora el 0xc0000aa058 representaría la dirección de memoria donde estaría almacenado el valor 8 podemos probar esto convirtiendo la variable numero1 a un puntero añadiendo el siguiente statement al código anterior &lt;code class=&quot;language-text&quot;&gt;fmt.Println(&amp;amp;numero1) // 0xc0000aa058 0xc0000aa058&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Deferenciación&lt;/h2&gt;
+&lt;p&gt;Podemos recuperar un valor que esté almacenado en un puntero gracias a &lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var numero1 int = 1
+var numero2 *int = &amp;amp;numero1
+fmt.Println(numero1, numero2) // 1 0xc0000aa058
+
+numero1 = 8
+// Al usar el asterisco estamos reemplazando el
+// valor de la memoria donde está almacenada por su valor real
+fmt.Println(numero1, *numero2) // 8 8&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Funciones&lt;/h1&gt;
+&lt;p&gt;Una aplicación siempre debe tener un punto de entrada:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// siempre en el paquete main
+package main
+
+import &quot;fmt&quot;
+
+// Sin parámetros y llamada main
+func main() {
+	fmt.Print(&quot;Empieza el main&quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Convención de nombres&lt;/h2&gt;
+&lt;p&gt;Se sigue las reglas normales ya descritas en la guía pascalCase o camelCase con la primera minuscula (solo disponible para ese fichero) y con la primera mayúscula para que pueda ser accedido desde toda la aplicación&lt;/p&gt;
+&lt;h2&gt;Parámetros&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+	pintarEnConsola(&quot;mensaje&quot;)
+}
+
+// func nombre (nombreVariable tipo, ...) 
+func pintarEnConsola(mensaje string) {
+	fmt.Print(mensaje)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Si tienes mas de 1 variable del mismo tipo podrías agruparlas&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func pintarEnConsola(mensaje, mensaje2 string, numero int) {
+	fmt.Print(mensaje, mensaje2, numero)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Punteros en parámetros de funciones&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+	saludo := &quot;Hola &quot;
+	nombre := &quot;MaQuiNa&quot;
+
+	saludarPorConsola(saludo, nombre)
+
+	println(&quot;Hemos saludado a&quot;, nombre)
+}
+
+func saludarPorConsola(saludo, nombre string) {
+	fmt.Println(saludo, nombre)
+	nombre = &quot;nombreCambiado&quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Hola  MaQuiNa
+Hemos saludado a MaQuiNa&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+	saludo := &quot;Hola &quot;
+	nombre := &quot;MaQuiNa&quot;
+
+	saludarPorConsola(&amp;amp;saludo, &amp;amp;nombre)
+
+	println(&quot;Hemos saludado a&quot;, nombre)
+}
+
+func saludarPorConsola(saludo, nombre *string) {
+	fmt.Println(*saludo, *nombre)
+	*nombre = &quot;nombreCambiado&quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Hola  MaQuiNa
+Hemos saludado a nombreCambiado&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Vararg&lt;/h3&gt;
+&lt;p&gt;Podemos usar esta notación para wrapear un conjunto de variables en un slice y trabajar con una serie de posibles valores indeterminado&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+	saludo := &quot;Hola&quot;
+	nombre := &quot;MaQuiNa&quot;
+	nombre2 := &quot;MaQuina2&quot;
+
+	saludarPorConsola(&amp;amp;saludo, nombre, nombre2)
+}
+
+func saludarPorConsola(saludo *string, nombres ...string) {
+	for _, nombre := range nombres {
+		fmt.Println(*saludo, nombre)
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Puedes incluso no pasar ningun argumento en el parámetro del var arg de modo que en la funcion de antes sería plausible esto: &lt;code class=&quot;language-text&quot;&gt;saludarPorConsola(&amp;amp;saludo)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;De tal manera que entonces el forEach no se ejecutaría ya que nombres estaría vacío&lt;/p&gt;
+&lt;h2&gt;Return&lt;/h2&gt;
+&lt;p&gt;Podemos retornar mas de 1 valor en go en las funciones esto es util para por ejemplo evitar el uso de panic y controlar el flujo de errores con objetos secundarios un ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+	division, error := dividir(5.0, 0.0)
+
+	// Si error no es nulo quiere decir que hubo excepciones
+	if error != nil {
+		// imprimimos por consola el error
+		fmt.Print(&quot;Hubo un error mas info: &quot;, error)
+		// paramos la ejecución del método
+		return
+	}
+	// Imprimimos el valor de la división
+	fmt.Print(&quot;El valor de la división es:&quot;, division)
+}
+
+// En una función podemos retornar mas de un valor
+// normalmente el 1º es el resultado de la función
+// y los segundos y sucesivos son errores por ejemplo
+func dividir(dividendo, divisor float64) (float64, error) {
+
+        // En go usamos las ward clausules en la medida
+        // de lo posible para evitar piramides infernales de ifs
+	if divisor == 0.0 {
+		// En vez de controlar el flujo con panic
+		// usamos la String creada a partir de fmt.Errorf
+		return 0.0, fmt.Errorf(&quot;No se puede dividir entre 0&quot;)
+	}
+
+	// retornamos el valor de la división y nil
+	// que indica que no hubo error
+	return dividendo / divisor, nil
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Funciones anónimas&lt;/h2&gt;
+&lt;p&gt;En go podemos crear funciones dentro de funciones&lt;/p&gt;
+&lt;h3&gt;Simple&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+        // Declaramos la funcion
+	func() {
+		fmt.Print(&quot;Hola&quot;)
+        // y con los `()` hacemos la llamada a
+        // la misma inmediatamente
+	}()
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Problema en entornos asincronos&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+
+	// podemos usar variables de fuera de la
+	// función ya que está en el mismo scope
+	// Aqui el problema es que en cuanto vayamos
+	// a la programación asincrona vamos a tener problemas
+	for i := 0; i &amp;lt; 5; i++ {
+		func() {
+			fmt.Print(i)
+		}()
+	}
+	// Esto en cambio tiene garantizado el correcto
+	//funcionamiento en entornos asincronos
+	// ya que se le pasa el valor vada ciclo
+	for i := 0; i &amp;lt; 5; i++ {
+		func(i int) {
+			fmt.Print(i)
+		}(i)
+	}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Funciones como tipos&lt;/h2&gt;
+&lt;p&gt;En go podemos tener funciones como variables un ejemplo&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func main() {
+
+	// Aqui declararíamos la función
+	funcion := func() {
+		fmt.Print(&quot;saludos desde dentro de una función&quot;)
+	}
+
+	// Aqui tenemos otra forma de declarar una función
+	var funcion2 func() = func() {
+		fmt.Print(&quot;saludos desde otra función nueva&quot;)
+	}
+
+	// aqui las ejecutaríamos
+	funcion()
+	funcion2()
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Métodos&lt;/h2&gt;
+&lt;p&gt;Son básicamente los mismo que una función solo que le damos un contexto donde ejecutarse para asi por ejemplo de 1 struct podemos definir “métodos” como si por ejemplo en java en una clase metiéramos un método un ejemplo&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type hechicero struct {
+	mana   int
+	nombre string
+}
+
+func main() {
+
+	mago := hechicero{
+		100,
+		&quot;MaQuiNa&quot;,
+	}
+
+	fmt.Println(&quot;Maná actual del mago: &quot;, mago.mana)
+	// Aunque el struct no tenga este metodo hemos anclado esa función a ese tipo
+	mago.lanzarHechizo()
+	fmt.Println(&quot;Maná actual del mago: &quot;, mago.mana)
+}
+
+// en este caso estamos &quot;añadiendo&quot; una función para poder ser invocada desde hechicero
+// de tal manera aunque los struct no puedan tener una función dentro como si de una clase
+// y un método en java serían podemos vincular una función a cierto struct
+
+// notese que si queremos que los cambios que hagamos a este struct se hagan
+// efectivos para en este caso la función main desde donde hemos pasado el struct
+// necesitamos marcar el tipo del parámetro con un *
+func (mago *hechicero) lanzarHechizo() {
+	mago.mana = mago.mana - 10
+	fmt.Println(mago.nombre, &quot; Lanza Bola de fuego maná restante: &quot;, mago.mana)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Maná actual del mago:  100
+MaQuiNa  Lanza Bola de fuego maná restante:  90
+Maná actual del mago:  90&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Interfaces&lt;/h1&gt;
+&lt;p&gt;Las interfaces no describen datos como los structs , sino comportamientos un ejemplo del uso de las mismas:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/*
+ Se define un comportamiento es decir en este caso se va a
+ escribir bytes en algun lugar ya sea un fichero una conexión TCP
+ solo nos interesa lo que entra y lo que sale de la función
+ esto es lo que denominamos &quot;comportamiento&quot;
+
+ Lo que devuelva será (nº de bytes escritos y el posible
+	error que pueda producirse) respectivamente
+*/
+type Escritor interface {
+	Write([]byte) (int, error)
+}
+
+/*
+ Ahora solo necesitamos un struct que implemente esa interfaz
+ si vienes de otros lenguajes tipo java esperarías algo tipo
+ implements para implementar la interfaz pero en go , eso se hace
+ creando un método con la misma firma que el método de la interfaz
+ que acepte este struct
+*/
+type EscritorConsola struct{}
+
+/*
+ Aqui definimos la implementación de la interfaz
+*/
+func (escritorConsola EscritorConsola) Write(bytesEscribir []byte) (int, error) {
+	bytesEscritos, error := fmt.Print(string(bytesEscribir))
+	return bytesEscritos, error
+}
+
+func main() {
+
+	// De tal manera que puedo sustituir EscritorConsola{} por por ejemplo
+	// EscritorArchivo{} ya que ese tambien implementaría la interfaz Escritor
+	// porque cumple el contrato(método) de la misma
+	var escritor Escritor = EscritorConsola{}
+	escritor.Write([]byte(&quot;Hola mundo&quot;))
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Convención de nombres&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;El nombre de la interfaz debe ser descriptivo de lo que hace&lt;/li&gt;
+&lt;li&gt;El nombre de la interfaz debe describir una accion (escribir)&lt;/li&gt;
+&lt;li&gt;Si tienes una interfaz con 1 solo método el nombre de la interfaz tendría que ser el nombre del método tambien&lt;/li&gt;
+&lt;li&gt;Si tienes mas de un método en la interfaz el nombre debe indicar en conjunto es decir si tienes sumar dividir restar y multiplicar la interfaz se debería de llamar Calcular&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Interfaces de interfaces&lt;/h2&gt;
+&lt;p&gt;Las interfaces de interfaces se usan principalmente para recolectar una serie de utilidades que son a su vez interfaces como podría ser la conexión a una base de datos tendrías por ejemplo un método para abrir la conexión a la misma y otro para cerrarlo&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Golang Blockchain Básico]]></title><description><![CDATA[Tabla de contenidos Que es Blockchain Que es el Block Hash Función bytes.Join Creación de un bloque Añadiendo un bloque a la blockchain El…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Golang_Blockchain/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Golang_Blockchain/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#que-es-blockchain&quot;&gt;Que es Blockchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#que-es-el-block&quot;&gt;Que es el Block&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#hash&quot;&gt;Hash&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#funci-n-bytesjoin&quot;&gt;Función bytes.Join&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#creaci-n-de-un-bloque&quot;&gt;Creación de un bloque&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#a-adiendo-un-bloque-a-la-blockchain&quot;&gt;Añadiendo un bloque a la blockchain&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#el-bloque--genesis-&quot;&gt;El bloque “Genesis”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#creaci-n-de-una-blockchain&quot;&gt;Creación de una blockchain&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#ejecuci-n-del-c-digo-hasta-ahora&quot;&gt;Ejecución del código hasta ahora&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#qu--es-prueba-de-trabajo---proof-of-work--pow-&quot;&gt;Qué es Prueba de trabajo / Proof of Work (PoW)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#proof-of-work&quot;&gt;Proof Of Work&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#algoritmo-de-proof-of-work&quot;&gt;Algoritmo de Proof Of Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#dificultad&quot;&gt;Dificultad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#creando-el-struct&quot;&gt;Creando el Struct&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#creando-proof-of-work&quot;&gt;Creando Proof of work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#iniciar-prueba-de-trabajo&quot;&gt;Iniciar Prueba de trabajo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#ejecuci-n-de-la-prueba-de-trabajo-para-firmar-el-bloque&quot;&gt;Ejecución de la prueba de trabajo para firmar el bloque&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#modificando-el-c-digo-previo&quot;&gt;Modificando el código previo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#validar-prueba-de-trabajo&quot;&gt;Validar Prueba de trabajo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#juntando-todo-en-el-main&quot;&gt;Juntando todo en el main&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Que es Blockchain&lt;/h1&gt;
+&lt;p&gt;Es una base de datos publica que está distribuida en múltiples nodos&lt;/p&gt;
+&lt;p&gt;Todos los datos que entren deben de ser confiable por todos los nodos&lt;/p&gt;
+&lt;p&gt;Podrías por ejemplo tener un 49% de los nodos que produjesen datos erróneos o malintencionados y la red podría recuperarse de ese desajuste&lt;/p&gt;
+&lt;p&gt;Un Blockchain implica multiples bloques que contienen la información que queremos en nuestra base de datos&lt;/p&gt;
+&lt;p&gt;Struct de un blockchain&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type blockChain struct {
+	blocks []*block
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;En este struct básicamente tenemos un slice de punteros de bloques&lt;/p&gt;
+&lt;h1&gt;Que es el Block&lt;/h1&gt;
+&lt;p&gt;Básicamente son los objetos que conforman un blockchain este tiene que tener 3 básicos como mínimo&lt;/p&gt;
+&lt;p&gt;Atributos&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hash del propio bloque&lt;/li&gt;
+&lt;li&gt;Hash del último bloque creado (Es el que nos permite enlazar bloques)&lt;/li&gt;
+&lt;li&gt;El dato que guardamos pueden ser imagenes textos numeros etc&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Struct de un bloque básico&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type block struct {
+	Hash     []byte
+	Data     []byte
+	PrevHash []byte
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Hash&lt;/h2&gt;
+&lt;p&gt;Para el calculo del hash como standard se usa el algoritmo de encriptado SHA-256 debido a su equilibrio entre coste computacional y solidez si quieres aprender mas sobre este algoritmo de encriptación: &lt;a href=&quot;https://academy.bit2me.com/sha256-algoritmo-bitcoin/&quot;&gt;Pincha Aqui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para calcular el Hash usaremos este método:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (b *block) CalculateHash() {
+// Explicado mas abajo
+	info := bytes.Join([][]byte{b.Data, b.PrevHash}, []byte{})
+  // Lo encriptamos 
+	hash := sha256.Sum256(info)
+  // Creamos una copia y se la asignamos al hash del struct
+	b.Hash = hash[:]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Función bytes.Join&lt;/h3&gt;
+&lt;p&gt;Lo que hace es juntar los slice de datos que se le pasan como primer parámetro &lt;code class=&quot;language-text&quot;&gt;[][]byte{b.Data, b.PrevHash}&lt;/code&gt; (Pueden ser cualquier cantidad) teniendo como separador el 2º parámetro &lt;code class=&quot;language-text&quot;&gt;[]byte{}&lt;/code&gt; (En este caso vacío)&lt;/p&gt;
+&lt;p&gt;un ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1º Parámetro
+AAAA
+BBBB
+2º Parámetro
+CC
+Resultado:
+AAAACCBBBB&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.includehelp.com/golang/bytes-join-function-with-examples.aspx&quot;&gt;Documentación función bytes.Join&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Creación de un bloque&lt;/h2&gt;
+&lt;p&gt;Para crear un bloque deberías de llamar a esta función para asegurarte de que se calcula el hash por lo tanto sería conveniente hacer “privado” el struct del bloque para que nadie pueda instanciar un bloque de otra forma que no sea a traves de esta función&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func CreateBlock(data string, prevHash []byte) *block {
+// Creamos normal un struct
+	block := &amp;amp;block{
+		Hash:     []byte{},
+    // Aqui adicionalmente pasamos de string a bytes
+		Data:     []byte(data),
+		PrevHash: prevHash,
+	}
+  // Llamamos a la función que creamos previamente
+	block.CalculateHash()
+  // Lo retornamos
+	return block
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Añadiendo un bloque a la blockchain&lt;/h2&gt;
+&lt;p&gt;para añadir un bloque a la blockchain debemos usar la anterior funcion&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Recibimos una blockchain
+func (chain *blockChain) AddBlock(data string) {
+// Cogemos el ultimos bloque
+	prevBlock := chain.Blocks[len(chain.Blocks)-1]
+  // A traves de la función de antes creamos el nuevo bloque
+	newBlock := CreateBlock(data, prevBlock.Hash)
+  // Se lo añadimos a la blockchain
+	chain.Blocks = append(chain.Blocks, newBlock)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;El bloque “Genesis”&lt;/h3&gt;
+&lt;p&gt;Como hemos visto siempre referenciamos al hash del anterior bloque pero que pasa con el primer bloque este es imposible que pueda tener ningun hash previo ya que este es el primero, a este bloque se le llama “Genesis Block” que representa el primer bloque de la blockchain&lt;/p&gt;
+&lt;p&gt;Lo crearemos a traves de este método:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func Genesis() *block {
+	return CreateBlock(&quot;Genesis&quot;, []byte{})
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Creación de una blockchain&lt;/h2&gt;
+&lt;p&gt;Para crear la blockchain debemos usar la función anterior de tal manera:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func InitBlockChain() *blockChain {
+	return &amp;amp;blockChain{[]*block{Genesis()}}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Ejecución del código hasta ahora&lt;/h1&gt;
+&lt;p&gt;Si quieres ver el estado del repositorio hasta ahora ve a &lt;a href=&quot;https://github.com/MaQuiNa1995/Go-BlockChain/tree/f8e0bf7d63d0334eac3b3153a8dbbc5e5cb057b9&quot;&gt;este commit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nuestro main sacará por consola esto:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Bloque:
+        Previous Hash:
+        Data in Block: Genesis
+        Hash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5
+
+Bloque:
+        Previous Hash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5
+        Data in Block: 1º Block Despues del Genesis
+        Hash: 11f27e8a6ee5b1b8d1eada2d6ce758bd7028d86b47dcac4ac27b202eaeedead2
+
+Bloque:
+        Previous Hash: 11f27e8a6ee5b1b8d1eada2d6ce758bd7028d86b47dcac4ac27b202eaeedead2
+        Data in Block: 2º Block Despues del Genesis
+        Hash: d81bbc87021060a1925f297a98fe3b6236481fe42e82c856bb42ea119b3f72bf
+
+Bloque:
+        Previous Hash: d81bbc87021060a1925f297a98fe3b6236481fe42e82c856bb42ea119b3f72bf
+        Data in Block: 3º Block Despues del Genesis
+        Hash: 3f6628fe789a6518e1dfe77075e9f8f88028def45d281580b9f26d0590ee8317&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;No importa la veces que lo ejecutemos siempre será lo mismo, por lo tanto al ejecutar varias veces este main obtendras varias copias de la blockchain la manera de saber si está corrupto es comparando los hashes de las diferentes copias&lt;/p&gt;
+&lt;h1&gt;Qué es Prueba de trabajo / Proof of Work (PoW)&lt;/h1&gt;
+&lt;p&gt;Hay diferentes Algoritmos de consenso (Consensus algorithms / Proof Algorithms)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Proof Of Work&lt;/li&gt;
+&lt;li&gt;Proof Of Steak&lt;/li&gt;
+&lt;li&gt;y mas…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Proof Of Work&lt;/h1&gt;
+&lt;p&gt;Básicamente lo que quiere decir este es que forzamos a la red a realizar trabajo para añadir un bloque a la blockchain&lt;/p&gt;
+&lt;p&gt;Este “trabajo” es computacional, cuando hablamos de mineros minando Bitcoin nos referimos a esta “Prueba de trabajo” para añadir bloques a la blockchain la razón por la que estos consiguen bitcoins es esencialmente porque potencian a la red a escribir mas rápido ese bloque&lt;/p&gt;
+&lt;p&gt;Adicionalmente hacen que el dato de los bloques sea mas seguro, el Proof of work viene de la mano de la validación de esa prueba que es cuando un usuario hace el trabajo necesario para añadir ese bloque se requiere que demuestre ese trabajo realizado de ahi el nombre de “Prueba de trabajo” (Proof of Work)&lt;/p&gt;
+&lt;p&gt;Un concepto importante es que el trabajo realizado debe ser dificil pero la demostración del mismo debe ser relativamente fácil&lt;/p&gt;
+&lt;h2&gt;Algoritmo de Proof Of Work&lt;/h2&gt;
+&lt;p&gt;Los pasos a seguir van a ser:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Coger el dato del bloque&lt;/li&gt;
+&lt;li&gt;Crear un contador que empiece en el 0 (Llamado nonce) que será incrementado en +1 teóricamente infinitas veces&lt;/li&gt;
+&lt;li&gt;Crear el hash del dato + el nonce&lt;/li&gt;
+&lt;li&gt;Verificar el hash para ver si cumple determinados requerimientos de aqui viene la llamada “dificultad”
+&lt;ul&gt;
+&lt;li&gt;Requerimientos:
+&lt;ul&gt;
+&lt;li&gt;Los primeros bytes deben contener 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Digamos que quieres escribir un bloque, si el hash de ese nuevo bloque no cumple los requerimientos tendrás que volver a generar el hash ese reintento es a lo que se le llama dificultad teniendo que recrear otro hash para ver si cumple con los requerimientos&lt;/p&gt;
+&lt;p&gt;En la proof of Work original de bitcoin la especificación se llama “Hash cash”&lt;/p&gt;
+&lt;p&gt;En la dificultad original se requería que 20 bytes consecutivos del hash fueran 0, con el paso del tiempo esa dificultad se ha incrementado por lo tanto se requiere de mas trabajo para poder escribir un bloque&lt;/p&gt;
+&lt;p&gt;Podemos aumentar la dificultad por ejemplo haciendo que el requerimiento de 20 ceros pase a 50&lt;/p&gt;
+&lt;h2&gt;Dificultad&lt;/h2&gt;
+&lt;p&gt;Para empezar definiremos una constante para definir la dificultad: &lt;code class=&quot;language-text&quot;&gt;const difficulty = 18&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Tendremos una dificultad estática en nuestra prueba de concepto pero si quieres crear un algoritmo de blockchain de verdad tendrás que crear algún tipo de función que incremente la dificultad de poco en poco dentro de un periodo de tiempo largo, básicamente quieres que esto suceda para aumentar el número de mineros en la red y la potencia creciente de los ordenadores que pudieran venir en el futuro. Queremos que el tiempo de minado de un bloque sea uniforme&lt;/p&gt;
+&lt;h2&gt;Creando el Struct&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type ProofOfWork struct {
+        // Representa un puntero a un bloque
+	Block  *block
+	// Representa un puntero que es el requerimiento que hemos definido arriba 
+	// para entender esto necesitas saber como los bytes se comportan en el ordenador
+	Target *big.Int
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://golang.org/pkg/math/big/&quot;&gt;Big Int en Go&lt;/a&gt;
+&lt;a href=&quot;https://golang.org/pkg/bytes/&quot;&gt;Bytes en Go&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Creando Proof of work&lt;/h2&gt;
+&lt;p&gt;Con está función desde un puntero a un bloque obtendríamos un puntero a una prueba de trabajo&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func NewProof(b *block) *ProofOfWork {
+        // Crearemos nuestro target 
+	target := big.NewInt(1)
+	// Despues tendremos que coger el 256 que es el número de bytes de los hashes
+	// y extraer la dificultad de ellos , para despues hacer un left shift (Lsh) de los bytes de ese número
+	target.Lsh(target, uint(256-difficulty))
+	// Ahora cogemos ese valor al que le hemos hecho el left shifted
+	// y lo metemos a nuestro struct
+	pow := &amp;amp;ProofOfWork{
+		Block: b,
+		Target: target,
+	}
+	// Despues lo retornamos
+	return pow
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Iniciar Prueba de trabajo&lt;/h2&gt;
+&lt;p&gt;Este método será el que inicie los datos de la prueba de trabajo tendremos que combinar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hash del bloque previo&lt;/li&gt;
+&lt;li&gt;Hash del dato&lt;/li&gt;
+&lt;li&gt;Hash del contador&lt;/li&gt;
+&lt;li&gt;Hash de la dificultad&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (pow *ProofOfWork) InitData(nonce int) []byte {
+
+	// usaremos el bytes.Join
+	data := bytes.Join(
+		[][]byte{
+			// Meteremos el prevHash y el dato
+			pow.Block.PrevHash,
+			pow.Block.Data,
+			// Adicionalmente meteremos el nonce y la dificultad
+			// Acordarse de cuando hablamos del algoritmo de proof of work 
+			// Crear el hash del dato + el nonce
+			// Para simplificar las cosas crearemos una nueva
+			// función que explicaremos a continuación y castearemos
+			// los int a int 64 para pasarseles a ToHex()
+			ToHex(int64(nonce)),
+			ToHex(int64(difficulty)),
+		},
+		[]byte{},
+	)
+
+	return data
+}
+
+// De un int64 obtendremos un slice de bytes simplemente
+func ToHex(num int64) []byte {
+	buff := new(bytes.Buffer)
+	err := binary.Write(buff, binary.BigEndian, num)
+	if err != nil {
+		log.Panic(err)
+	}
+	return buff.Bytes()
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Ejecución de la prueba de trabajo para firmar el bloque&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (pow *ProofOfWork) Run() (int, []byte) {
+	var intHash big.Int
+	var hash [32]byte
+
+	// Iniciamos el contador
+	nonce := 0
+
+	// Haremos una especie de do while (Si venís de otro lenguaje)
+	// En este loop prepararemos nuestro dato y
+	// luego lo hashearemos a sha-256
+	// Seguidamente convertiremos ese Hash a un biginteger
+	// Por ultimo compararemos ese biginteger generado con el del target
+	// Que estará dentro de nuestro struct de proof of work
+	for nonce &amp;lt; math.MaxInt64 {
+		// Llamaremos a nuestro InitData para preparar el dato
+		data := pow.InitData(nonce)
+		// Los hashearemos
+		hash = sha256.Sum256(data)
+
+		// Con fines de demostración hacemos un log en pantalla
+		fmt.Printf(&quot;\r%x&quot;, hash)
+
+		// haremos una copia del slice
+		intHash.SetBytes(hash[:])
+
+		// Ahora compararemos el hash generado con el del target
+		if intHash.Cmp(pow.Target) == -1 {
+			// Si el hash generado es menor nos salimos del bucle
+			// Ya que esto quiere decir que hemos podido firmar el bloque
+			break
+		}
+		// De otra forma seguimos incrementando el contador para repetir el proceso
+		nonce++
+	}
+	// hacemos un salto de línea para separar trazas
+	fmt.Println()
+
+	// retornamos el contador y una copia del slice
+	return nonce, hash[:]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Modificando el código previo&lt;/h2&gt;
+&lt;p&gt;Ahora necesitaremos cambiar el código del bloque para añadir el contador y poder implementar la validación de los requerimientos&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type block struct {
+	Hash     []byte
+	Data     []byte
+	PrevHash []byte
+	Nonce    int // Campo nuevo
+}
+
+func CreateBlock(data string, prevHash []byte) *block {
+
+	block := &amp;amp;block{
+		Hash:     []byte{},
+		Data:     []byte(data),
+		PrevHash: prevHash,
+		Nonce:    0, // inicializamos el nonce a 0
+	}
+
+	block.CalculateHash()
+	return block
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Eliminaremos tambien la función CalculateHash()&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (b *block) CalculateHash() {
+	info := bytes.Join([][]byte{b.Data, b.PrevHash}, []byte{})
+	hash := sha256.Sum256(info)
+	b.Hash = hash[:]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;y cambiamos completamente la función que creaba bloques&lt;/p&gt;
+&lt;p&gt;Para rellenar con el nonce nuestro struct:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Crear la prueba de trabajo&lt;/li&gt;
+&lt;li&gt;Ejecutar la prueba de trabajo&lt;/li&gt;
+&lt;li&gt;Informar el nonce y el hash en el bloque&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func CreateBlock(data string, prevHash []byte) *block {
+
+   block := &amp;amp;block{
+   	Hash:     []byte{},
+   	Data:     []byte(data),
+   	PrevHash: prevHash,
+   	Nonce:    0, // inicializamos el nonce a 0
+   }
+
+   // creamos la prueba de trabajo
+   pow := NewProof(block)
+
+   // Y la iniciamos
+   nonce, hash := pow.Run()
+
+   // Cuando hayamos completado la prueba de trabajo
+   // podremos rellenar el nonce y el hash obtenido
+   block.Hash = hash[:]
+   block.Nonce = nonce
+
+   return block
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Validar Prueba de trabajo&lt;/h2&gt;
+&lt;p&gt;Básicamente lo que se quiere hacer aqui es ejecutar el ciclo que ha hecho la prueba de trabajo una vez mas para ver si ese hash que se ha obtenido de la 1º ejecución es válido esto podría evitar por ejemplo que de casualidad a fuerza bruta demos con un hash correcto&lt;/p&gt;
+&lt;p&gt;Es decir no valdría con solo proveer del hash correcto sino tambien proveer de los pasos que has hecho para llegar a ese hash gracias al nonce (contador) por fuerza bruta sería inviable ya que por cada hash tendrías que ejecutar N veces el nonce es decir:&lt;/p&gt;
+&lt;p&gt;Por fuerza bruta generamos (pongamos 3):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;111222333
+&lt;ul&gt;
+&lt;li&gt;Generamos el par con nonce 1&lt;/li&gt;
+&lt;li&gt;Generamos el par con nonce 2&lt;/li&gt;
+&lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;222333444
+&lt;ul&gt;
+&lt;li&gt;Generamos el par con nonce 1&lt;/li&gt;
+&lt;li&gt;Generamos el par con nonce 2&lt;/li&gt;
+&lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;333444555
+&lt;ul&gt;
+&lt;li&gt;Generamos el par con nonce 1&lt;/li&gt;
+&lt;li&gt;Generamos el par con nonce 2&lt;/li&gt;
+&lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Por lo tanto si ya es dificil dar con el hash correcto imagínate tener que probar N veces con el nonce se hace prácticamente inviable ya que da millones y millones de combinaciones por no decir trillones…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (pow *ProofOfWork) Validate() bool {
+	var intHash big.Int
+
+        // Aqui está el truco de la validación explicada mas abajo
+	data := pow.InitData(pow.Block.Nonce)
+
+	hash := sha256.Sum256(data)
+	intHash.SetBytes(hash[:])
+
+	return intHash.Cmp(pow.Target) == -1
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Al crear el bloque el nonce que se le pasa es 0 pero aqui directamente es uno que se ha calculado por lo tanto de primeras crearemos el hash correcto de aqui viene lo que decíamos antes de que probar la validez de la prueba de trabajo es relativamente fácil&lt;/p&gt;
+&lt;p&gt;Como dijimos antes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Realizar la prueba de trabajo es dificil&lt;/li&gt;
+&lt;li&gt;Pero probarla es relativamente fácil&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si quieres cambiar el hash de un bloque vas a tener que recalcular el hash propio (que eso ya es bastante costoso) y los hashes de los bloques siguientes y aparte hacer creer que ese bloque que has metido es un bloque confiable&lt;/p&gt;
+&lt;p&gt;Podemos validar un bloque relativamente rápido pero el trabajo para crear el bloque y firmarle es muy dificil por lo tanto podemos afirmar que es muy dificil manipular un bloque por una o una gran cantidad de entidades&lt;/p&gt;
+&lt;h2&gt;Juntando todo en el main&lt;/h2&gt;
+&lt;p&gt;Por últimos tenemos que añadir esta prueba de trabajo a nuestro main&lt;/p&gt;
+&lt;p&gt;Antes del final del loop añadiremos:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pow := model.NewProof(block)
+fmt.Printf(&quot;Prueba de Trabajo: %s\n\n&quot;, strconv.FormatBool(pow.Validate()))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/MaQuiNa1995/Go-BlockChain/tree/2a67da8b90523cb669a2cb8b0f6a65931bc6cade&quot;&gt;Código en el repo hasta aqui&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Guía gRPC]]></title><description><![CDATA[Tabla de contenidos Que es gRPC Que tipos hay Como Funciona Porque gRPC Generación de código Java Para cualquier lenguaje (Windows…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/gRPC/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/gRPC/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#que-es-grpc&quot;&gt;Que es gRPC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#que-tipos-hay&quot;&gt;Que tipos hay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#como-funciona&quot;&gt;Como Funciona&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#porque-grpc&quot;&gt;Porque gRPC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#generaci-n-de-c-digo&quot;&gt;Generación de código&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#java&quot;&gt;Java&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#para-cualquier-lenguaje--windows-&quot;&gt;Para cualquier lenguaje (Windows)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#diferencias-rest-vs-grpc&quot;&gt;Diferencias REST vs gRPC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#documentaci-n-oficial&quot;&gt;Documentación oficial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Que es gRPC&lt;/h1&gt;
+&lt;p&gt;Es un protocolo por el cual se permite ejecutar un procedimiento de otro programa alojado en otro sistema&lt;/p&gt;
+&lt;p&gt;La mejor parte de gRPC es que los desarrolladores no tienen que codificar explicitamente los detalles de la interacción, este código se autogenera con el propio framework&lt;/p&gt;
+&lt;p&gt;De tal manera que si por ejemplo tenemos una aplicación Golang y una Java a traves de este protocolo podrían llamarse entre si&lt;/p&gt;
+&lt;p&gt;Uno actúa de servidor y otro de cliente (Luego veremos las diferentes formas que hay)&lt;/p&gt;
+&lt;h1&gt;Que tipos hay&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Unaria – Cliente manda 1 mensaje y el servidor responde con otro mensaje&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Streaming del lado de cliente – El cliente manda n mensajes y espera que el servidor mande 1 sola respuesta&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;streaming del lado del servidor – El cliente manda 1 mensaje y espera que el servidor mande N mensajes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;bi-direccional – el cliente y el servidor se mandan multiples mensajes en paralelo y un orden arbitrario, este tipo es flexible y no bloqueante que se refiere a que ninguna de las 2 partes necesita esperar para mandar informacion a la otra&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Como Funciona&lt;/h1&gt;
+&lt;p&gt;El cliente tiene un “stub” que provee el mismo método o función que tiene el servidor , este “stub” es autogenerado por el framework a traves de un compilador externo o en el caso de java a traves de un plugin que definimo en el pom&lt;/p&gt;
+&lt;p&gt;Este “stub” llamara a gRPC por detrás para intercambiar información con el servidor por la red&lt;/p&gt;
+&lt;p&gt;Gracias al “stub” el cliente y el servidor solo se tienen que preocupar de implementar su logica de negocio&lt;/p&gt;
+&lt;h1&gt;Porque gRPC&lt;/h1&gt;
+&lt;p&gt;Es una manera de comunicar diferentes lenguajes de programación que hoy en día existen en una aplicación productiva, por ejemplo podrías tener java o golang como backend y Javascript como frontend&lt;/p&gt;
+&lt;p&gt;Para la comunicación entre ellos debe haber algo para hacerlo de manera sencilla y rápida, eso es gRPC&lt;/p&gt;
+&lt;p&gt;Es necesario cumplir una serie de reglas para esa comunicación:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the communication channel&lt;/li&gt;
+&lt;li&gt;authentication&lt;/li&gt;
+&lt;li&gt;payload format&lt;/li&gt;
+&lt;li&gt;data model&lt;/li&gt;
+&lt;li&gt;error handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Generación de código&lt;/h1&gt;
+&lt;p&gt;Esta es la característica mas importante ya que genera el código necesario para la comunicación enter cliente y servidor&lt;/p&gt;
+&lt;p&gt;Lo primero que tendremos que hacer es crear el contrato en un archivo .proto que en el caso de java alojaremos en &lt;code class=&quot;language-text&quot;&gt;src/main/proto/&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Aqui definimos la sintaxis que usará nuestro archivo, es conveniente usar la versión 3 de este
+// Ya que aglutina mas lenguajes de programación compatibles 
+syntax = &quot;proto3&quot;;
+
+// Con esto indicamos que cada clase que se cree se haga en un fichero independiente
+option java_multiple_files = true;
+
+// Aqui indicaremos el paquete que tienen todos las clases de este archivo
+package com.github.maquina1995.grpc.model;
+
+// Aqui definimos un pojo que albergará la información de una Persona
+message Person {
+	// Aqui definimos los atributos indicando la posición de los mismos
+	string first_name = 1;
+	string last_name = 2;
+}
+
+// Lo mismo que lo de antes pero aqui solo tenemos 1 atributo
+message Greeting {
+	string message = 1;
+}
+
+// Aquí definimos un servicio que usa nuestros pojos 
+service HelloWorldService {
+  rpc sayHello (Person) returns (Greeting);
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Java&lt;/h2&gt;
+&lt;p&gt;Para poder generar los objetos asociados necesitamos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Tener un plugin de maven&lt;/li&gt;
+&lt;li&gt;Ejecutar un &lt;code class=&quot;language-text&quot;&gt;mvn clean compile&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;plugin&gt;
+	&amp;lt;groupId&gt;org.xolstice.maven.plugins&amp;lt;/groupId&gt;
+	&amp;lt;artifactId&gt;protobuf-maven-plugin&amp;lt;/artifactId&gt;
+	&amp;lt;version&gt;${protobuf-maven-plugin.version}&amp;lt;/version&gt;
+	&amp;lt;configuration&gt;
+	&amp;lt;protocArtifact&gt;com.google.protobuf:protoc:3.5.1-1:exe:${os.detected.classifier}&amp;lt;/protocArtifact&gt;
+	&amp;lt;pluginId&gt;grpc-java&amp;lt;/pluginId&gt;
+	&amp;lt;pluginArtifact&gt;io.grpc:protoc-gen-grpc-java:1.16.1:exe:${os.detected.classifier}&amp;lt;/pluginArtifact&gt;
+	&amp;lt;/configuration&gt;
+	&amp;lt;executions&gt;
+		&amp;lt;execution&gt;
+			&amp;lt;goals&gt;
+				&amp;lt;goal&gt;compile&amp;lt;/goal&gt;
+				&amp;lt;goal&gt;compile-custom&amp;lt;/goal&gt;
+			&amp;lt;/goals&gt;
+		&amp;lt;/execution&gt;
+	&amp;lt;/executions&gt;
+&amp;lt;/plugin&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Al hacer el &lt;code class=&quot;language-text&quot;&gt;mvn clean compile&lt;/code&gt; podremos ver en la siguiente ruta: &lt;code class=&quot;language-text&quot;&gt;target\generated-sources\protobuf\java&lt;/code&gt; los archivos generados&lt;/p&gt;
+&lt;h2&gt;Para cualquier lenguaje (Windows)&lt;/h2&gt;
+&lt;p&gt;Según la respuesta de Yuvaraj en: &lt;a href=&quot;https://stackoverflow.com/questions/13616033/install-protocol-buffers-on-windows&quot;&gt;https://stackoverflow.com/questions/13616033/install-protocol-buffers-on-windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Solo tienes que descargar: &lt;a href=&quot;https://github.com/protocolbuffers/protobuf/releases/download/v3.19.1/protoc-3.19.1-win64.zip&quot;&gt;https://github.com/protocolbuffers/protobuf/releases/download/v3.19.1/protoc-3.19.1-win64.zip&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Una vez que la tengas debes descomprimirla en una ruta&lt;/li&gt;
+&lt;li&gt;Esa ruta la tienes que meter como PROTOC_HOME en las variables de entorno&lt;/li&gt;
+&lt;li&gt;A continuación añadiremos %PROTOC_HOME%\bin a la variable path&lt;/li&gt;
+&lt;li&gt;Abriremos una nueva terminal (no vale las que tengamos abiertas ya que has modificado las variables de entorno)&lt;/li&gt;
+&lt;li&gt;Para finalizar comprobaremos la correcta instalación y configuración con el comando: &lt;code class=&quot;language-text&quot;&gt;protoc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Diferencias REST vs gRPC&lt;/h1&gt;
+&lt;p&gt;En el rest la comunicación solo se puede hacer en un sentido &lt;code class=&quot;language-text&quot;&gt;cliente -&gt; servidor&lt;/code&gt; mientras que en gRPC en todos los sentidos.&lt;/p&gt;
+&lt;p&gt;Rest está ampliamente soportado por los navegadores mientras que gRPC está limitado.&lt;/p&gt;
+&lt;h1&gt;Documentación oficial&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Java: &lt;a href=&quot;https://grpc.io/docs/languages/java/basics/&quot;&gt;Documentacion gRPC Java&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Golang: &lt;a href=&quot;https://grpc.io/docs/languages/go/basics/&quot;&gt;Documentacion gRPC Golang&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Indice Github]]></title><description><![CDATA[Tabla de contenidos Java Pruebas técnicas Comercio Football Vehiculos gRPC Guía Spring-web Testing Junit4 Mockito Webservices Webservices…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Indice_Github/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Indice_Github/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#java&quot;&gt;Java&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#pruebas-t-cnicas&quot;&gt;Pruebas técnicas&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#comercio&quot;&gt;Comercio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#football&quot;&gt;Football&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#vehiculos&quot;&gt;Vehiculos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#grpc&quot;&gt;gRPC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#gu-a-spring-web&quot;&gt;Guía Spring-web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#testing&quot;&gt;Testing&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#junit4&quot;&gt;Junit4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#mockito&quot;&gt;Mockito&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#webservices&quot;&gt;Webservices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#webservices-1&quot;&gt;Webservices&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#quarkus&quot;&gt;Quarkus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#microservicio-gen-rico&quot;&gt;Microservicio Genérico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#hateoas&quot;&gt;Hateoas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#spring-webflux&quot;&gt;Spring Webflux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#herramientas&quot;&gt;Herramientas&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#extractor-uml&quot;&gt;Extractor Uml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#recopilador-datos-sql&quot;&gt;Recopilador Datos SQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#de-serializador-xml&quot;&gt;De-Serializador XML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#env-os-mail&quot;&gt;Envíos Mail&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#pedidos-euskal&quot;&gt;Pedidos Euskal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#pedidos-jap-n&quot;&gt;Pedidos Japón&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#no-afk-tool&quot;&gt;No-Afk-Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#discord-bot&quot;&gt;Discord Bot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#spring-security&quot;&gt;Spring security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#kafka&quot;&gt;Kafka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#docker&quot;&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jackson&quot;&gt;Jackson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#persistencia&quot;&gt;Persistencia&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#hibernate---springboot&quot;&gt;Hibernate + Springboot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jpa&quot;&gt;JPA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#mybatis&quot;&gt;MyBatis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#mongodb&quot;&gt;MongoDb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#mapper&quot;&gt;Mapper&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#mapstructs&quot;&gt;Mapstructs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#formaciones&quot;&gt;Formaciones&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#novedades-java8&quot;&gt;Novedades Java8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#reflection&quot;&gt;Reflection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#hilos&quot;&gt;Hilos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#spring-profile&quot;&gt;Spring Profile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#spring-core&quot;&gt;Spring Core&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#spring-batch&quot;&gt;Spring batch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#ehcache---spring-aop&quot;&gt;Ehcache + Spring Aop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#league-of-legends-info--proyecto-final-de-ciclo-grados-superior-&quot;&gt;League Of Legends Info (Proyecto final de ciclo grados superior)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#golang&quot;&gt;Golang&lt;/a&gt;
+- &lt;a href=&quot;#aprende-golang-&quot;&gt;Aprende golang:&lt;/a&gt;
+- &lt;a href=&quot;#wip--webscrapping-&quot;&gt;WIP: WebScrapping:&lt;/a&gt;
+- &lt;a href=&quot;#blockchain-&quot;&gt;Blockchain:&lt;/a&gt;
+- &lt;a href=&quot;#persistencia-&quot;&gt;Persistencia:&lt;/a&gt;
+- &lt;a href=&quot;#webservice-&quot;&gt;Webservice:&lt;/a&gt;
+- &lt;a href=&quot;#herramientas-&quot;&gt;Herramientas:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#c-&quot;&gt;C#&lt;/a&gt;
+- &lt;a href=&quot;#terraria-mod-&quot;&gt;Terraria Mod:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#python&quot;&gt;Python&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#chat&quot;&gt;Chat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#pygame&quot;&gt;Pygame&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#mover-sprite&quot;&gt;Mover sprite&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#pong&quot;&gt;Pong&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#find-the-bottle&quot;&gt;Find The Bottle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#click-kill-aliens&quot;&gt;Click Kill Aliens&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Java&lt;/h1&gt;
 &lt;h3&gt;Pruebas técnicas&lt;/h3&gt;
 &lt;p&gt;A continuación muestro las distintas pruebas técnicas que tuve que hacer para distintas empresas en el repo de cada una hay un readme explicando los requisitos&lt;/p&gt;
 &lt;h5&gt;Comercio&lt;/h5&gt;
