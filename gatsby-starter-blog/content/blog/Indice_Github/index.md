@@ -6,7 +6,7 @@ description: Esto es el índice de los repositorios de mi github ordenados por l
 
 # Tabla de contenidos
 - [Java](#java)
-    + [Pruebas técnicas](#pruebas-técnicas)
+    + [Pruebas técnicas](###pruebas-técnicas)
         * [Comercio](#comercio)
         * [Football](#####football)
         * [Vehiculos](#vehiculos)
@@ -51,14 +51,14 @@ description: Esto es el índice de los repositorios de mi github ordenados por l
     + [Ehcache + Spring Aop](#ehcache---spring-aop)
     + [League Of Legends Info (Proyecto final de ciclo grados superior)](#league-of-legends-info--proyecto-final-de-ciclo-grados-superior-)
 - [Golang](#golang)
-      - [Aprende golang:](#aprende-golang-)
-      - [WIP: WebScrapping:](#wip--webscrapping-)
-      - [Blockchain:](#blockchain-)
-      - [Persistencia:](#persistencia-)
-      - [Webservice:](#webservice-)
-      - [Herramientas:](#herramientas-)
-- [C#](#c-)
-      - [Terraria Mod:](#terraria-mod-)
+    + [Aprende golang](#aprende-golang)
+    + [WIP: WebScrapping](#wip--webscrapping)
+    + [Blockchain](#blockchain)
+    + [Persistencia](#persistencia)
+    + [Webservice](#webservice)
+    + [Herramientas](#herramientas)
+- [C#](#c)
+      - [Terraria Mod](#terraria-mod)
 - [Python](#python)
     + [Chat](#chat)
     + [Pygame](#pygame)
@@ -272,27 +272,27 @@ Primer repositorio que se subió al github en el que muestro el trabajo de final
 
 # Golang
 
-#### Aprende golang:
+#### Aprende golang
 https://github.com/MaQuiNa1995/Hello_World
 
 Integra una wiki en la que se puede aprender golang desde los fundamentos mas básicos
 
-#### WIP: WebScrapping:
+#### WIP: WebScrapping
 https://github.com/MaQuiNa1995/WebScrapper
 
 Usa la técnica de webscrapping para sacar las habilidades de campeones del league of legends desde la página web oficial
 
-#### Blockchain:
+#### Blockchain
 https://github.com/MaQuiNa1995/Go-BlockChain
 
 Enseña algunos de los fundamentos del blockchain tambien integra una wiki con explicaciones de algunos conceptos relacionados con este mundo de la blockchain
 
-#### Persistencia:
+#### Persistencia
 https://github.com/MaQuiNa1995/Go_SimpleCrud
 
 Manejo de una base de datos MySql a traves del driver oficial de golang, se muestra un crud simple para el manejo de entidades sin relaciones
 
-#### Webservice:
+#### Webservice
 https://github.com/MaQuiNa1995/Go_Webservice
 
 Este proyecto integra bastantes cosas:  
@@ -301,14 +301,14 @@ Uso de GORM (Orm de golang) para la persistencia en base de datos
 Exposición de endpoints para la creación de un webservice de nivel 2  
 Uso de Swagger para la documentación y uso de la UI para pruebas contra esos endpoints  
 
-#### Herramientas:
+#### Herramientas
 https://github.com/MaQuiNa1995/Java_Enviroment_Helper
 
 Un script que descarga ciertas herramientas o programas necesarios para el desarrollo con java, Tambien comprueba la correcta configuración de las variables de entorno de java y maven
 
 # C#
 
-#### Terraria Mod:
+#### Terraria Mod
 https://github.com/MaQuiNa1995/MaQui-TerrariaMod
 
 Pequeño mod en el que añado monstruos y utilidades para jugar con amigos y aprender C#
