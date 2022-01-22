@@ -1,4 +1,397 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rincon del MaQuinarias RSS Feed]]></title><description><![CDATA[Rincon Del MaQuinarias]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Dec 2021 22:44:14 GMT</lastBuildDate><item><title><![CDATA[Golang Desde Cero]]></title><description><![CDATA[Tabla de contenidos: Instalación Descarga Instalación Verificación de la instalación Configuración del entorno Variables de entorno Windows…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Golang_Desde_Cero/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Golang_Desde_Cero/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos:&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rincon del MaQuinarias RSS Feed]]></title><description><![CDATA[Rincon Del MaQuinarias]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Jan 2022 18:33:07 GMT</lastBuildDate><item><title><![CDATA[Golang Blockchain Básico]]></title><description><![CDATA[Tabla de contenidos Que es Blockchain Que es el Block Hash Función bytes.Join Creación de un bloque Añadiendo un bloque a la blockchain El…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Golang_Blockchain/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Golang_Blockchain/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#que-es-blockchain&quot;&gt;Que es Blockchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#que-es-el-block&quot;&gt;Que es el Block&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#hash&quot;&gt;Hash&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#funci-n-bytesjoin&quot;&gt;Función bytes.Join&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#creaci-n-de-un-bloque&quot;&gt;Creación de un bloque&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#a-adiendo-un-bloque-a-la-blockchain&quot;&gt;Añadiendo un bloque a la blockchain&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#el-bloque--genesis-&quot;&gt;El bloque “Genesis”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#creaci-n-de-una-blockchain&quot;&gt;Creación de una blockchain&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#ejecuci-n-del-c-digo-hasta-ahora&quot;&gt;Ejecución del código hasta ahora&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#qu--es-prueba-de-trabajo---proof-of-work--pow-&quot;&gt;Qué es Prueba de trabajo / Proof of Work (PoW)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#proof-of-work&quot;&gt;Proof Of Work&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#algoritmo-de-proof-of-work&quot;&gt;Algoritmo de Proof Of Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#dificultad&quot;&gt;Dificultad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#creando-el-struct&quot;&gt;Creando el Struct&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#creando-proof-of-work&quot;&gt;Creando Proof of work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#iniciar-prueba-de-trabajo&quot;&gt;Iniciar Prueba de trabajo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#ejecuci-n-de-la-prueba-de-trabajo-para-firmar-el-bloque&quot;&gt;Ejecución de la prueba de trabajo para firmar el bloque&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#modificando-el-c-digo-previo&quot;&gt;Modificando el código previo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#validar-prueba-de-trabajo&quot;&gt;Validar Prueba de trabajo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#juntando-todo-en-el-main&quot;&gt;Juntando todo en el main&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Que es Blockchain&lt;/h1&gt;
+&lt;p&gt;Es una base de datos publica que está distribuida en múltiples nodos&lt;/p&gt;
+&lt;p&gt;Todos los datos que entren deben de ser confiable por todos los nodos&lt;/p&gt;
+&lt;p&gt;Podrías por ejemplo tener un 49% de los nodos que produjesen datos erróneos o malintencionados y la red podría recuperarse de ese desajuste&lt;/p&gt;
+&lt;p&gt;Un Blockchain implica multiples bloques que contienen la información que queremos en nuestra base de datos&lt;/p&gt;
+&lt;p&gt;Struct de un blockchain&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type blockChain struct {
+	blocks []*block
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;En este struct básicamente tenemos un slice de punteros de bloques&lt;/p&gt;
+&lt;h1&gt;Que es el Block&lt;/h1&gt;
+&lt;p&gt;Básicamente son los objetos que conforman un blockchain este tiene que tener 3 básicos como mínimo&lt;/p&gt;
+&lt;p&gt;Atributos&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hash del propio bloque&lt;/li&gt;
+&lt;li&gt;Hash del último bloque creado (Es el que nos permite enlazar bloques)&lt;/li&gt;
+&lt;li&gt;El dato que guardamos pueden ser imagenes textos numeros etc&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Struct de un bloque básico&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type block struct {
+	Hash     []byte
+	Data     []byte
+	PrevHash []byte
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Hash&lt;/h2&gt;
+&lt;p&gt;Para el calculo del hash como standard se usa el algoritmo de encriptado SHA-256 debido a su equilibrio entre coste computacional y solidez si quieres aprender mas sobre este algoritmo de encriptación: &lt;a href=&quot;https://academy.bit2me.com/sha256-algoritmo-bitcoin/&quot;&gt;Pincha Aqui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para calcular el Hash usaremos este método:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (b *block) CalculateHash() {
+// Explicado mas abajo
+	info := bytes.Join([][]byte{b.Data, b.PrevHash}, []byte{})
+  // Lo encriptamos 
+	hash := sha256.Sum256(info)
+  // Creamos una copia y se la asignamos al hash del struct
+	b.Hash = hash[:]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Función bytes.Join&lt;/h3&gt;
+&lt;p&gt;Lo que hace es juntar los slice de datos que se le pasan como primer parámetro &lt;code class=&quot;language-text&quot;&gt;[][]byte{b.Data, b.PrevHash}&lt;/code&gt; (Pueden ser cualquier cantidad) teniendo como separador el 2º parámetro &lt;code class=&quot;language-text&quot;&gt;[]byte{}&lt;/code&gt; (En este caso vacío)&lt;/p&gt;
+&lt;p&gt;un ejemplo:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1º Parámetro
+AAAA
+BBBB
+2º Parámetro
+CC
+Resultado:
+AAAACCBBBB&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.includehelp.com/golang/bytes-join-function-with-examples.aspx&quot;&gt;Documentación función bytes.Join&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Creación de un bloque&lt;/h2&gt;
+&lt;p&gt;Para crear un bloque deberías de llamar a esta función para asegurarte de que se calcula el hash por lo tanto sería conveniente hacer “privado” el struct del bloque para que nadie pueda instanciar un bloque de otra forma que no sea a traves de esta función&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func CreateBlock(data string, prevHash []byte) *block {
+// Creamos normal un struct
+	block := &amp;amp;block{
+		Hash:     []byte{},
+    // Aqui adicionalmente pasamos de string a bytes
+		Data:     []byte(data),
+		PrevHash: prevHash,
+	}
+  // Llamamos a la función que creamos previamente
+	block.CalculateHash()
+  // Lo retornamos
+	return block
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Añadiendo un bloque a la blockchain&lt;/h2&gt;
+&lt;p&gt;para añadir un bloque a la blockchain debemos usar la anterior funcion&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Recibimos una blockchain
+func (chain *blockChain) AddBlock(data string) {
+// Cogemos el ultimos bloque
+	prevBlock := chain.Blocks[len(chain.Blocks)-1]
+  // A traves de la función de antes creamos el nuevo bloque
+	newBlock := CreateBlock(data, prevBlock.Hash)
+  // Se lo añadimos a la blockchain
+	chain.Blocks = append(chain.Blocks, newBlock)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;El bloque “Genesis”&lt;/h3&gt;
+&lt;p&gt;Como hemos visto siempre referenciamos al hash del anterior bloque pero que pasa con el primer bloque este es imposible que pueda tener ningun hash previo ya que este es el primero, a este bloque se le llama “Genesis Block” que representa el primer bloque de la blockchain&lt;/p&gt;
+&lt;p&gt;Lo crearemos a traves de este método:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func Genesis() *block {
+	return CreateBlock(&quot;Genesis&quot;, []byte{})
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Creación de una blockchain&lt;/h2&gt;
+&lt;p&gt;Para crear la blockchain debemos usar la función anterior de tal manera:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func InitBlockChain() *blockChain {
+	return &amp;amp;blockChain{[]*block{Genesis()}}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Ejecución del código hasta ahora&lt;/h1&gt;
+&lt;p&gt;Si quieres ver el estado del repositorio hasta ahora ve a &lt;a href=&quot;https://github.com/MaQuiNa1995/Go-BlockChain/tree/f8e0bf7d63d0334eac3b3153a8dbbc5e5cb057b9&quot;&gt;este commit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nuestro main sacará por consola esto:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Bloque:
+        Previous Hash:
+        Data in Block: Genesis
+        Hash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5
+
+Bloque:
+        Previous Hash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5
+        Data in Block: 1º Block Despues del Genesis
+        Hash: 11f27e8a6ee5b1b8d1eada2d6ce758bd7028d86b47dcac4ac27b202eaeedead2
+
+Bloque:
+        Previous Hash: 11f27e8a6ee5b1b8d1eada2d6ce758bd7028d86b47dcac4ac27b202eaeedead2
+        Data in Block: 2º Block Despues del Genesis
+        Hash: d81bbc87021060a1925f297a98fe3b6236481fe42e82c856bb42ea119b3f72bf
+
+Bloque:
+        Previous Hash: d81bbc87021060a1925f297a98fe3b6236481fe42e82c856bb42ea119b3f72bf
+        Data in Block: 3º Block Despues del Genesis
+        Hash: 3f6628fe789a6518e1dfe77075e9f8f88028def45d281580b9f26d0590ee8317&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;No importa la veces que lo ejecutemos siempre será lo mismo, por lo tanto al ejecutar varias veces este main obtendras varias copias de la blockchain la manera de saber si está corrupto es comparando los hashes de las diferentes copias&lt;/p&gt;
+&lt;h1&gt;Qué es Prueba de trabajo / Proof of Work (PoW)&lt;/h1&gt;
+&lt;p&gt;Hay diferentes Algoritmos de consenso (Consensus algorithms / Proof Algorithms)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Proof Of Work&lt;/li&gt;
+&lt;li&gt;Proof Of Steak&lt;/li&gt;
+&lt;li&gt;y mas…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Proof Of Work&lt;/h1&gt;
+&lt;p&gt;Básicamente lo que quiere decir este es que forzamos a la red a realizar trabajo para añadir un bloque a la blockchain&lt;/p&gt;
+&lt;p&gt;Este “trabajo” es computacional, cuando hablamos de mineros minando Bitcoin nos referimos a esta “Prueba de trabajo” para añadir bloques a la blockchain la razón por la que estos consiguen bitcoins es esencialmente porque potencian a la red a escribir mas rápido ese bloque&lt;/p&gt;
+&lt;p&gt;Adicionalmente hacen que el dato de los bloques sea mas seguro, el Proof of work viene de la mano de la validación de esa prueba que es cuando un usuario hace el trabajo necesario para añadir ese bloque se requiere que demuestre ese trabajo realizado de ahi el nombre de “Prueba de trabajo” (Proof of Work)&lt;/p&gt;
+&lt;p&gt;Un concepto importante es que el trabajo realizado debe ser dificil pero la demostración del mismo debe ser relativamente fácil&lt;/p&gt;
+&lt;h2&gt;Algoritmo de Proof Of Work&lt;/h2&gt;
+&lt;p&gt;Los pasos a seguir van a ser:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Coger el dato del bloque&lt;/li&gt;
+&lt;li&gt;Crear un contador que empiece en el 0 (Llamado nonce) que será incrementado en +1 teóricamente infinitas veces&lt;/li&gt;
+&lt;li&gt;Crear el hash del dato + el nonce&lt;/li&gt;
+&lt;li&gt;Verificar el hash para ver si cumple determinados requerimientos de aqui viene la llamada “dificultad”
+&lt;ul&gt;
+&lt;li&gt;Requerimientos:
+&lt;ul&gt;
+&lt;li&gt;Los primeros bytes deben contener 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Digamos que quieres escribir un bloque, si el hash de ese nuevo bloque no cumple los requerimientos tendrás que volver a generar el hash ese reintento es a lo que se le llama dificultad teniendo que recrear otro hash para ver si cumple con los requerimientos&lt;/p&gt;
+&lt;p&gt;En la proof of Work original de bitcoin la especificación se llama “Hash cash”&lt;/p&gt;
+&lt;p&gt;En la dificultad original se requería que 20 bytes consecutivos del hash fueran 0, con el paso del tiempo esa dificultad se ha incrementado por lo tanto se requiere de mas trabajo para poder escribir un bloque&lt;/p&gt;
+&lt;p&gt;Podemos aumentar la dificultad por ejemplo haciendo que el requerimiento de 20 ceros pase a 50&lt;/p&gt;
+&lt;h2&gt;Dificultad&lt;/h2&gt;
+&lt;p&gt;Para empezar definiremos una constante para definir la dificultad: &lt;code class=&quot;language-text&quot;&gt;const difficulty = 18&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Tendremos una dificultad estática en nuestra prueba de concepto pero si quieres crear un algoritmo de blockchain de verdad tendrás que crear algún tipo de función que incremente la dificultad de poco en poco dentro de un periodo de tiempo largo, básicamente quieres que esto suceda para aumentar el número de mineros en la red y la potencia creciente de los ordenadores que pudieran venir en el futuro. Queremos que el tiempo de minado de un bloque sea uniforme&lt;/p&gt;
+&lt;h2&gt;Creando el Struct&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type ProofOfWork struct {
+        // Representa un puntero a un bloque
+	Block  *block
+	// Representa un puntero que es el requerimiento que hemos definido arriba 
+	// para entender esto necesitas saber como los bytes se comportan en el ordenador
+	Target *big.Int
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://golang.org/pkg/math/big/&quot;&gt;Big Int en Go&lt;/a&gt;
+&lt;a href=&quot;https://golang.org/pkg/bytes/&quot;&gt;Bytes en Go&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Creando Proof of work&lt;/h2&gt;
+&lt;p&gt;Con está función desde un puntero a un bloque obtendríamos un puntero a una prueba de trabajo&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func NewProof(b *block) *ProofOfWork {
+        // Crearemos nuestro target 
+	target := big.NewInt(1)
+	// Despues tendremos que coger el 256 que es el número de bytes de los hashes
+	// y extraer la dificultad de ellos , para despues hacer un left shift (Lsh) de los bytes de ese número
+	target.Lsh(target, uint(256-difficulty))
+	// Ahora cogemos ese valor al que le hemos hecho el left shifted
+	// y lo metemos a nuestro struct
+	pow := &amp;amp;ProofOfWork{
+		Block: b,
+		Target: target,
+	}
+	// Despues lo retornamos
+	return pow
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Iniciar Prueba de trabajo&lt;/h2&gt;
+&lt;p&gt;Este método será el que inicie los datos de la prueba de trabajo tendremos que combinar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hash del bloque previo&lt;/li&gt;
+&lt;li&gt;Hash del dato&lt;/li&gt;
+&lt;li&gt;Hash del contador&lt;/li&gt;
+&lt;li&gt;Hash de la dificultad&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (pow *ProofOfWork) InitData(nonce int) []byte {
+
+	// usaremos el bytes.Join
+	data := bytes.Join(
+		[][]byte{
+			// Meteremos el prevHash y el dato
+			pow.Block.PrevHash,
+			pow.Block.Data,
+			// Adicionalmente meteremos el nonce y la dificultad
+			// Acordarse de cuando hablamos del algoritmo de proof of work 
+			// Crear el hash del dato + el nonce
+			// Para simplificar las cosas crearemos una nueva
+			// función que explicaremos a continuación y castearemos
+			// los int a int 64 para pasarseles a ToHex()
+			ToHex(int64(nonce)),
+			ToHex(int64(difficulty)),
+		},
+		[]byte{},
+	)
+
+	return data
+}
+
+// De un int64 obtendremos un slice de bytes simplemente
+func ToHex(num int64) []byte {
+	buff := new(bytes.Buffer)
+	err := binary.Write(buff, binary.BigEndian, num)
+	if err != nil {
+		log.Panic(err)
+	}
+	return buff.Bytes()
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Ejecución de la prueba de trabajo para firmar el bloque&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (pow *ProofOfWork) Run() (int, []byte) {
+	var intHash big.Int
+	var hash [32]byte
+
+	// Iniciamos el contador
+	nonce := 0
+
+	// Haremos una especie de do while (Si venís de otro lenguaje)
+	// En este loop prepararemos nuestro dato y
+	// luego lo hashearemos a sha-256
+	// Seguidamente convertiremos ese Hash a un biginteger
+	// Por ultimo compararemos ese biginteger generado con el del target
+	// Que estará dentro de nuestro struct de proof of work
+	for nonce &amp;lt; math.MaxInt64 {
+		// Llamaremos a nuestro InitData para preparar el dato
+		data := pow.InitData(nonce)
+		// Los hashearemos
+		hash = sha256.Sum256(data)
+
+		// Con fines de demostración hacemos un log en pantalla
+		fmt.Printf(&quot;\r%x&quot;, hash)
+
+		// haremos una copia del slice
+		intHash.SetBytes(hash[:])
+
+		// Ahora compararemos el hash generado con el del target
+		if intHash.Cmp(pow.Target) == -1 {
+			// Si el hash generado es menor nos salimos del bucle
+			// Ya que esto quiere decir que hemos podido firmar el bloque
+			break
+		}
+		// De otra forma seguimos incrementando el contador para repetir el proceso
+		nonce++
+	}
+	// hacemos un salto de línea para separar trazas
+	fmt.Println()
+
+	// retornamos el contador y una copia del slice
+	return nonce, hash[:]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Modificando el código previo&lt;/h2&gt;
+&lt;p&gt;Ahora necesitaremos cambiar el código del bloque para añadir el contador y poder implementar la validación de los requerimientos&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type block struct {
+	Hash     []byte
+	Data     []byte
+	PrevHash []byte
+	Nonce    int // Campo nuevo
+}
+
+func CreateBlock(data string, prevHash []byte) *block {
+
+	block := &amp;amp;block{
+		Hash:     []byte{},
+		Data:     []byte(data),
+		PrevHash: prevHash,
+		Nonce:    0, // inicializamos el nonce a 0
+	}
+
+	block.CalculateHash()
+	return block
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Eliminaremos tambien la función CalculateHash()&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (b *block) CalculateHash() {
+	info := bytes.Join([][]byte{b.Data, b.PrevHash}, []byte{})
+	hash := sha256.Sum256(info)
+	b.Hash = hash[:]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;y cambiamos completamente la función que creaba bloques&lt;/p&gt;
+&lt;p&gt;Para rellenar con el nonce nuestro struct:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Crear la prueba de trabajo&lt;/li&gt;
+&lt;li&gt;Ejecutar la prueba de trabajo&lt;/li&gt;
+&lt;li&gt;Informar el nonce y el hash en el bloque&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func CreateBlock(data string, prevHash []byte) *block {
+
+   block := &amp;amp;block{
+   	Hash:     []byte{},
+   	Data:     []byte(data),
+   	PrevHash: prevHash,
+   	Nonce:    0, // inicializamos el nonce a 0
+   }
+
+   // creamos la prueba de trabajo
+   pow := NewProof(block)
+
+   // Y la iniciamos
+   nonce, hash := pow.Run()
+
+   // Cuando hayamos completado la prueba de trabajo
+   // podremos rellenar el nonce y el hash obtenido
+   block.Hash = hash[:]
+   block.Nonce = nonce
+
+   return block
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Validar Prueba de trabajo&lt;/h2&gt;
+&lt;p&gt;Básicamente lo que se quiere hacer aqui es ejecutar el ciclo que ha hecho la prueba de trabajo una vez mas para ver si ese hash que se ha obtenido de la 1º ejecución es válido esto podría evitar por ejemplo que de casualidad a fuerza bruta demos con un hash correcto&lt;/p&gt;
+&lt;p&gt;Es decir no valdría con solo proveer del hash correcto sino tambien proveer de los pasos que has hecho para llegar a ese hash gracias al nonce (contador) por fuerza bruta sería inviable ya que por cada hash tendrías que ejecutar N veces el nonce es decir:&lt;/p&gt;
+&lt;p&gt;Por fuerza bruta generamos (pongamos 3):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;111222333
+&lt;ul&gt;
+&lt;li&gt;Generamos el par con nonce 1&lt;/li&gt;
+&lt;li&gt;Generamos el par con nonce 2&lt;/li&gt;
+&lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;222333444
+&lt;ul&gt;
+&lt;li&gt;Generamos el par con nonce 1&lt;/li&gt;
+&lt;li&gt;Generamos el par con nonce 2&lt;/li&gt;
+&lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;333444555
+&lt;ul&gt;
+&lt;li&gt;Generamos el par con nonce 1&lt;/li&gt;
+&lt;li&gt;Generamos el par con nonce 2&lt;/li&gt;
+&lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Por lo tanto si ya es dificil dar con el hash correcto imagínate tener que probar N veces con el nonce se hace prácticamente inviable ya que da millones y millones de combinaciones por no decir trillones…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (pow *ProofOfWork) Validate() bool {
+	var intHash big.Int
+
+        // Aqui está el truco de la validación explicada mas abajo
+	data := pow.InitData(pow.Block.Nonce)
+
+	hash := sha256.Sum256(data)
+	intHash.SetBytes(hash[:])
+
+	return intHash.Cmp(pow.Target) == -1
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Al crear el bloque el nonce que se le pasa es 0 pero aqui directamente es uno que se ha calculado por lo tanto de primeras crearemos el hash correcto de aqui viene lo que decíamos antes de que probar la validez de la prueba de trabajo es relativamente fácil&lt;/p&gt;
+&lt;p&gt;Como dijimos antes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Realizar la prueba de trabajo es dificil&lt;/li&gt;
+&lt;li&gt;Pero probarla es relativamente fácil&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si quieres cambiar el hash de un bloque vas a tener que recalcular el hash propio (que eso ya es bastante costoso) y los hashes de los bloques siguientes y aparte hacer creer que ese bloque que has metido es un bloque confiable&lt;/p&gt;
+&lt;p&gt;Podemos validar un bloque relativamente rápido pero el trabajo para crear el bloque y firmarle es muy dificil por lo tanto podemos afirmar que es muy dificil manipular un bloque por una o una gran cantidad de entidades&lt;/p&gt;
+&lt;h2&gt;Juntando todo en el main&lt;/h2&gt;
+&lt;p&gt;Por últimos tenemos que añadir esta prueba de trabajo a nuestro main&lt;/p&gt;
+&lt;p&gt;Antes del final del loop añadiremos:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pow := model.NewProof(block)
+fmt.Printf(&quot;Prueba de Trabajo: %s\n\n&quot;, strconv.FormatBool(pow.Validate()))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/MaQuiNa1995/Go-BlockChain/tree/2a67da8b90523cb669a2cb8b0f6a65931bc6cade&quot;&gt;Código en el repo hasta aqui&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Golang Desde Cero]]></title><description><![CDATA[Tabla de contenidos: Instalación Descarga Instalación Verificación de la instalación Configuración del entorno Variables de entorno Windows…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Golang_Desde_Cero/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Golang_Desde_Cero/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos:&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#instalaci-n&quot;&gt;Instalación&lt;/a&gt;
 &lt;ul&gt;
@@ -1505,400 +1898,7 @@ func main() {
 &lt;/ul&gt;
 &lt;h2&gt;Interfaces de interfaces&lt;/h2&gt;
 &lt;p&gt;Las interfaces de interfaces se usan principalmente para recolectar una serie de utilidades que son a su vez interfaces como podría ser la conexión a una base de datos tendrías por ejemplo un método para abrir la conexión a la misma y otro para cerrarlo&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Golang Blockchain Básico]]></title><description><![CDATA[Tabla de contenidos Que es Blockchain Que es el Block Hash Función bytes.Join Creación de un bloque Añadiendo un bloque a la blockchain El…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Golang_Blockchain/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Golang_Blockchain/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#que-es-blockchain&quot;&gt;Que es Blockchain&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#que-es-el-block&quot;&gt;Que es el Block&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#hash&quot;&gt;Hash&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#funci-n-bytesjoin&quot;&gt;Función bytes.Join&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#creaci-n-de-un-bloque&quot;&gt;Creación de un bloque&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#a-adiendo-un-bloque-a-la-blockchain&quot;&gt;Añadiendo un bloque a la blockchain&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#el-bloque--genesis-&quot;&gt;El bloque “Genesis”&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#creaci-n-de-una-blockchain&quot;&gt;Creación de una blockchain&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#ejecuci-n-del-c-digo-hasta-ahora&quot;&gt;Ejecución del código hasta ahora&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#qu--es-prueba-de-trabajo---proof-of-work--pow-&quot;&gt;Qué es Prueba de trabajo / Proof of Work (PoW)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#proof-of-work&quot;&gt;Proof Of Work&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#algoritmo-de-proof-of-work&quot;&gt;Algoritmo de Proof Of Work&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#dificultad&quot;&gt;Dificultad&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#creando-el-struct&quot;&gt;Creando el Struct&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#creando-proof-of-work&quot;&gt;Creando Proof of work&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#iniciar-prueba-de-trabajo&quot;&gt;Iniciar Prueba de trabajo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#ejecuci-n-de-la-prueba-de-trabajo-para-firmar-el-bloque&quot;&gt;Ejecución de la prueba de trabajo para firmar el bloque&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#modificando-el-c-digo-previo&quot;&gt;Modificando el código previo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#validar-prueba-de-trabajo&quot;&gt;Validar Prueba de trabajo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#juntando-todo-en-el-main&quot;&gt;Juntando todo en el main&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Que es Blockchain&lt;/h1&gt;
-&lt;p&gt;Es una base de datos publica que está distribuida en múltiples nodos&lt;/p&gt;
-&lt;p&gt;Todos los datos que entren deben de ser confiable por todos los nodos&lt;/p&gt;
-&lt;p&gt;Podrías por ejemplo tener un 49% de los nodos que produjesen datos erróneos o malintencionados y la red podría recuperarse de ese desajuste&lt;/p&gt;
-&lt;p&gt;Un Blockchain implica multiples bloques que contienen la información que queremos en nuestra base de datos&lt;/p&gt;
-&lt;p&gt;Struct de un blockchain&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type blockChain struct {
-	blocks []*block
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;En este struct básicamente tenemos un slice de punteros de bloques&lt;/p&gt;
-&lt;h1&gt;Que es el Block&lt;/h1&gt;
-&lt;p&gt;Básicamente son los objetos que conforman un blockchain este tiene que tener 3 básicos como mínimo&lt;/p&gt;
-&lt;p&gt;Atributos&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Hash del propio bloque&lt;/li&gt;
-&lt;li&gt;Hash del último bloque creado (Es el que nos permite enlazar bloques)&lt;/li&gt;
-&lt;li&gt;El dato que guardamos pueden ser imagenes textos numeros etc&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Struct de un bloque básico&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type block struct {
-	Hash     []byte
-	Data     []byte
-	PrevHash []byte
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Hash&lt;/h2&gt;
-&lt;p&gt;Para el calculo del hash como standard se usa el algoritmo de encriptado SHA-256 debido a su equilibrio entre coste computacional y solidez si quieres aprender mas sobre este algoritmo de encriptación: &lt;a href=&quot;https://academy.bit2me.com/sha256-algoritmo-bitcoin/&quot;&gt;Pincha Aqui&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Para calcular el Hash usaremos este método:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (b *block) CalculateHash() {
-// Explicado mas abajo
-	info := bytes.Join([][]byte{b.Data, b.PrevHash}, []byte{})
-  // Lo encriptamos 
-	hash := sha256.Sum256(info)
-  // Creamos una copia y se la asignamos al hash del struct
-	b.Hash = hash[:]
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Función bytes.Join&lt;/h3&gt;
-&lt;p&gt;Lo que hace es juntar los slice de datos que se le pasan como primer parámetro &lt;code class=&quot;language-text&quot;&gt;[][]byte{b.Data, b.PrevHash}&lt;/code&gt; (Pueden ser cualquier cantidad) teniendo como separador el 2º parámetro &lt;code class=&quot;language-text&quot;&gt;[]byte{}&lt;/code&gt; (En este caso vacío)&lt;/p&gt;
-&lt;p&gt;un ejemplo:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1º Parámetro
-AAAA
-BBBB
-2º Parámetro
-CC
-Resultado:
-AAAACCBBBB&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.includehelp.com/golang/bytes-join-function-with-examples.aspx&quot;&gt;Documentación función bytes.Join&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Creación de un bloque&lt;/h2&gt;
-&lt;p&gt;Para crear un bloque deberías de llamar a esta función para asegurarte de que se calcula el hash por lo tanto sería conveniente hacer “privado” el struct del bloque para que nadie pueda instanciar un bloque de otra forma que no sea a traves de esta función&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func CreateBlock(data string, prevHash []byte) *block {
-// Creamos normal un struct
-	block := &amp;amp;block{
-		Hash:     []byte{},
-    // Aqui adicionalmente pasamos de string a bytes
-		Data:     []byte(data),
-		PrevHash: prevHash,
-	}
-  // Llamamos a la función que creamos previamente
-	block.CalculateHash()
-  // Lo retornamos
-	return block
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Añadiendo un bloque a la blockchain&lt;/h2&gt;
-&lt;p&gt;para añadir un bloque a la blockchain debemos usar la anterior funcion&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Recibimos una blockchain
-func (chain *blockChain) AddBlock(data string) {
-// Cogemos el ultimos bloque
-	prevBlock := chain.Blocks[len(chain.Blocks)-1]
-  // A traves de la función de antes creamos el nuevo bloque
-	newBlock := CreateBlock(data, prevBlock.Hash)
-  // Se lo añadimos a la blockchain
-	chain.Blocks = append(chain.Blocks, newBlock)
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;El bloque “Genesis”&lt;/h3&gt;
-&lt;p&gt;Como hemos visto siempre referenciamos al hash del anterior bloque pero que pasa con el primer bloque este es imposible que pueda tener ningun hash previo ya que este es el primero, a este bloque se le llama “Genesis Block” que representa el primer bloque de la blockchain&lt;/p&gt;
-&lt;p&gt;Lo crearemos a traves de este método:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func Genesis() *block {
-	return CreateBlock(&quot;Genesis&quot;, []byte{})
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Creación de una blockchain&lt;/h2&gt;
-&lt;p&gt;Para crear la blockchain debemos usar la función anterior de tal manera:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func InitBlockChain() *blockChain {
-	return &amp;amp;blockChain{[]*block{Genesis()}}
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Ejecución del código hasta ahora&lt;/h1&gt;
-&lt;p&gt;Si quieres ver el estado del repositorio hasta ahora ve a &lt;a href=&quot;https://github.com/MaQuiNa1995/Go-BlockChain/tree/f8e0bf7d63d0334eac3b3153a8dbbc5e5cb057b9&quot;&gt;este commit&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Nuestro main sacará por consola esto:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Bloque:
-        Previous Hash:
-        Data in Block: Genesis
-        Hash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5
-
-Bloque:
-        Previous Hash: 81ddc8d248b2dccdd3fdd5e84f0cad62b08f2d10b57f9a831c13451e5c5c80a5
-        Data in Block: 1º Block Despues del Genesis
-        Hash: 11f27e8a6ee5b1b8d1eada2d6ce758bd7028d86b47dcac4ac27b202eaeedead2
-
-Bloque:
-        Previous Hash: 11f27e8a6ee5b1b8d1eada2d6ce758bd7028d86b47dcac4ac27b202eaeedead2
-        Data in Block: 2º Block Despues del Genesis
-        Hash: d81bbc87021060a1925f297a98fe3b6236481fe42e82c856bb42ea119b3f72bf
-
-Bloque:
-        Previous Hash: d81bbc87021060a1925f297a98fe3b6236481fe42e82c856bb42ea119b3f72bf
-        Data in Block: 3º Block Despues del Genesis
-        Hash: 3f6628fe789a6518e1dfe77075e9f8f88028def45d281580b9f26d0590ee8317&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;No importa la veces que lo ejecutemos siempre será lo mismo, por lo tanto al ejecutar varias veces este main obtendras varias copias de la blockchain la manera de saber si está corrupto es comparando los hashes de las diferentes copias&lt;/p&gt;
-&lt;h1&gt;Qué es Prueba de trabajo / Proof of Work (PoW)&lt;/h1&gt;
-&lt;p&gt;Hay diferentes Algoritmos de consenso (Consensus algorithms / Proof Algorithms)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Proof Of Work&lt;/li&gt;
-&lt;li&gt;Proof Of Steak&lt;/li&gt;
-&lt;li&gt;y mas…&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Proof Of Work&lt;/h1&gt;
-&lt;p&gt;Básicamente lo que quiere decir este es que forzamos a la red a realizar trabajo para añadir un bloque a la blockchain&lt;/p&gt;
-&lt;p&gt;Este “trabajo” es computacional, cuando hablamos de mineros minando Bitcoin nos referimos a esta “Prueba de trabajo” para añadir bloques a la blockchain la razón por la que estos consiguen bitcoins es esencialmente porque potencian a la red a escribir mas rápido ese bloque&lt;/p&gt;
-&lt;p&gt;Adicionalmente hacen que el dato de los bloques sea mas seguro, el Proof of work viene de la mano de la validación de esa prueba que es cuando un usuario hace el trabajo necesario para añadir ese bloque se requiere que demuestre ese trabajo realizado de ahi el nombre de “Prueba de trabajo” (Proof of Work)&lt;/p&gt;
-&lt;p&gt;Un concepto importante es que el trabajo realizado debe ser dificil pero la demostración del mismo debe ser relativamente fácil&lt;/p&gt;
-&lt;h2&gt;Algoritmo de Proof Of Work&lt;/h2&gt;
-&lt;p&gt;Los pasos a seguir van a ser:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Coger el dato del bloque&lt;/li&gt;
-&lt;li&gt;Crear un contador que empiece en el 0 (Llamado nonce) que será incrementado en +1 teóricamente infinitas veces&lt;/li&gt;
-&lt;li&gt;Crear el hash del dato + el nonce&lt;/li&gt;
-&lt;li&gt;Verificar el hash para ver si cumple determinados requerimientos de aqui viene la llamada “dificultad”
-&lt;ul&gt;
-&lt;li&gt;Requerimientos:
-&lt;ul&gt;
-&lt;li&gt;Los primeros bytes deben contener 0&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Digamos que quieres escribir un bloque, si el hash de ese nuevo bloque no cumple los requerimientos tendrás que volver a generar el hash ese reintento es a lo que se le llama dificultad teniendo que recrear otro hash para ver si cumple con los requerimientos&lt;/p&gt;
-&lt;p&gt;En la proof of Work original de bitcoin la especificación se llama “Hash cash”&lt;/p&gt;
-&lt;p&gt;En la dificultad original se requería que 20 bytes consecutivos del hash fueran 0, con el paso del tiempo esa dificultad se ha incrementado por lo tanto se requiere de mas trabajo para poder escribir un bloque&lt;/p&gt;
-&lt;p&gt;Podemos aumentar la dificultad por ejemplo haciendo que el requerimiento de 20 ceros pase a 50&lt;/p&gt;
-&lt;h2&gt;Dificultad&lt;/h2&gt;
-&lt;p&gt;Para empezar definiremos una constante para definir la dificultad: &lt;code class=&quot;language-text&quot;&gt;const difficulty = 18&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Tendremos una dificultad estática en nuestra prueba de concepto pero si quieres crear un algoritmo de blockchain de verdad tendrás que crear algún tipo de función que incremente la dificultad de poco en poco dentro de un periodo de tiempo largo, básicamente quieres que esto suceda para aumentar el número de mineros en la red y la potencia creciente de los ordenadores que pudieran venir en el futuro. Queremos que el tiempo de minado de un bloque sea uniforme&lt;/p&gt;
-&lt;h2&gt;Creando el Struct&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type ProofOfWork struct {
-        // Representa un puntero a un bloque
-	Block  *block
-	// Representa un puntero que es el requerimiento que hemos definido arriba 
-	// para entender esto necesitas saber como los bytes se comportan en el ordenador
-	Target *big.Int
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://golang.org/pkg/math/big/&quot;&gt;Big Int en Go&lt;/a&gt;
-&lt;a href=&quot;https://golang.org/pkg/bytes/&quot;&gt;Bytes en Go&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Creando Proof of work&lt;/h2&gt;
-&lt;p&gt;Con está función desde un puntero a un bloque obtendríamos un puntero a una prueba de trabajo&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func NewProof(b *block) *ProofOfWork {
-        // Crearemos nuestro target 
-	target := big.NewInt(1)
-	// Despues tendremos que coger el 256 que es el número de bytes de los hashes
-	// y extraer la dificultad de ellos , para despues hacer un left shift (Lsh) de los bytes de ese número
-	target.Lsh(target, uint(256-difficulty))
-	// Ahora cogemos ese valor al que le hemos hecho el left shifted
-	// y lo metemos a nuestro struct
-	pow := &amp;amp;ProofOfWork{
-		Block: b,
-		Target: target,
-	}
-	// Despues lo retornamos
-	return pow
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Iniciar Prueba de trabajo&lt;/h2&gt;
-&lt;p&gt;Este método será el que inicie los datos de la prueba de trabajo tendremos que combinar:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Hash del bloque previo&lt;/li&gt;
-&lt;li&gt;Hash del dato&lt;/li&gt;
-&lt;li&gt;Hash del contador&lt;/li&gt;
-&lt;li&gt;Hash de la dificultad&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (pow *ProofOfWork) InitData(nonce int) []byte {
-
-	// usaremos el bytes.Join
-	data := bytes.Join(
-		[][]byte{
-			// Meteremos el prevHash y el dato
-			pow.Block.PrevHash,
-			pow.Block.Data,
-			// Adicionalmente meteremos el nonce y la dificultad
-			// Acordarse de cuando hablamos del algoritmo de proof of work 
-			// Crear el hash del dato + el nonce
-			// Para simplificar las cosas crearemos una nueva
-			// función que explicaremos a continuación y castearemos
-			// los int a int 64 para pasarseles a ToHex()
-			ToHex(int64(nonce)),
-			ToHex(int64(difficulty)),
-		},
-		[]byte{},
-	)
-
-	return data
-}
-
-// De un int64 obtendremos un slice de bytes simplemente
-func ToHex(num int64) []byte {
-	buff := new(bytes.Buffer)
-	err := binary.Write(buff, binary.BigEndian, num)
-	if err != nil {
-		log.Panic(err)
-	}
-	return buff.Bytes()
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Ejecución de la prueba de trabajo para firmar el bloque&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (pow *ProofOfWork) Run() (int, []byte) {
-	var intHash big.Int
-	var hash [32]byte
-
-	// Iniciamos el contador
-	nonce := 0
-
-	// Haremos una especie de do while (Si venís de otro lenguaje)
-	// En este loop prepararemos nuestro dato y
-	// luego lo hashearemos a sha-256
-	// Seguidamente convertiremos ese Hash a un biginteger
-	// Por ultimo compararemos ese biginteger generado con el del target
-	// Que estará dentro de nuestro struct de proof of work
-	for nonce &amp;lt; math.MaxInt64 {
-		// Llamaremos a nuestro InitData para preparar el dato
-		data := pow.InitData(nonce)
-		// Los hashearemos
-		hash = sha256.Sum256(data)
-
-		// Con fines de demostración hacemos un log en pantalla
-		fmt.Printf(&quot;\r%x&quot;, hash)
-
-		// haremos una copia del slice
-		intHash.SetBytes(hash[:])
-
-		// Ahora compararemos el hash generado con el del target
-		if intHash.Cmp(pow.Target) == -1 {
-			// Si el hash generado es menor nos salimos del bucle
-			// Ya que esto quiere decir que hemos podido firmar el bloque
-			break
-		}
-		// De otra forma seguimos incrementando el contador para repetir el proceso
-		nonce++
-	}
-	// hacemos un salto de línea para separar trazas
-	fmt.Println()
-
-	// retornamos el contador y una copia del slice
-	return nonce, hash[:]
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Modificando el código previo&lt;/h2&gt;
-&lt;p&gt;Ahora necesitaremos cambiar el código del bloque para añadir el contador y poder implementar la validación de los requerimientos&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type block struct {
-	Hash     []byte
-	Data     []byte
-	PrevHash []byte
-	Nonce    int // Campo nuevo
-}
-
-func CreateBlock(data string, prevHash []byte) *block {
-
-	block := &amp;amp;block{
-		Hash:     []byte{},
-		Data:     []byte(data),
-		PrevHash: prevHash,
-		Nonce:    0, // inicializamos el nonce a 0
-	}
-
-	block.CalculateHash()
-	return block
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Eliminaremos tambien la función CalculateHash()&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (b *block) CalculateHash() {
-	info := bytes.Join([][]byte{b.Data, b.PrevHash}, []byte{})
-	hash := sha256.Sum256(info)
-	b.Hash = hash[:]
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;y cambiamos completamente la función que creaba bloques&lt;/p&gt;
-&lt;p&gt;Para rellenar con el nonce nuestro struct:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Crear la prueba de trabajo&lt;/li&gt;
-&lt;li&gt;Ejecutar la prueba de trabajo&lt;/li&gt;
-&lt;li&gt;Informar el nonce y el hash en el bloque&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func CreateBlock(data string, prevHash []byte) *block {
-
-   block := &amp;amp;block{
-   	Hash:     []byte{},
-   	Data:     []byte(data),
-   	PrevHash: prevHash,
-   	Nonce:    0, // inicializamos el nonce a 0
-   }
-
-   // creamos la prueba de trabajo
-   pow := NewProof(block)
-
-   // Y la iniciamos
-   nonce, hash := pow.Run()
-
-   // Cuando hayamos completado la prueba de trabajo
-   // podremos rellenar el nonce y el hash obtenido
-   block.Hash = hash[:]
-   block.Nonce = nonce
-
-   return block
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Validar Prueba de trabajo&lt;/h2&gt;
-&lt;p&gt;Básicamente lo que se quiere hacer aqui es ejecutar el ciclo que ha hecho la prueba de trabajo una vez mas para ver si ese hash que se ha obtenido de la 1º ejecución es válido esto podría evitar por ejemplo que de casualidad a fuerza bruta demos con un hash correcto&lt;/p&gt;
-&lt;p&gt;Es decir no valdría con solo proveer del hash correcto sino tambien proveer de los pasos que has hecho para llegar a ese hash gracias al nonce (contador) por fuerza bruta sería inviable ya que por cada hash tendrías que ejecutar N veces el nonce es decir:&lt;/p&gt;
-&lt;p&gt;Por fuerza bruta generamos (pongamos 3):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;111222333
-&lt;ul&gt;
-&lt;li&gt;Generamos el par con nonce 1&lt;/li&gt;
-&lt;li&gt;Generamos el par con nonce 2&lt;/li&gt;
-&lt;li&gt;etc&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;222333444
-&lt;ul&gt;
-&lt;li&gt;Generamos el par con nonce 1&lt;/li&gt;
-&lt;li&gt;Generamos el par con nonce 2&lt;/li&gt;
-&lt;li&gt;etc&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;333444555
-&lt;ul&gt;
-&lt;li&gt;Generamos el par con nonce 1&lt;/li&gt;
-&lt;li&gt;Generamos el par con nonce 2&lt;/li&gt;
-&lt;li&gt;etc&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Por lo tanto si ya es dificil dar con el hash correcto imagínate tener que probar N veces con el nonce se hace prácticamente inviable ya que da millones y millones de combinaciones por no decir trillones…&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;func (pow *ProofOfWork) Validate() bool {
-	var intHash big.Int
-
-        // Aqui está el truco de la validación explicada mas abajo
-	data := pow.InitData(pow.Block.Nonce)
-
-	hash := sha256.Sum256(data)
-	intHash.SetBytes(hash[:])
-
-	return intHash.Cmp(pow.Target) == -1
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Al crear el bloque el nonce que se le pasa es 0 pero aqui directamente es uno que se ha calculado por lo tanto de primeras crearemos el hash correcto de aqui viene lo que decíamos antes de que probar la validez de la prueba de trabajo es relativamente fácil&lt;/p&gt;
-&lt;p&gt;Como dijimos antes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Realizar la prueba de trabajo es dificil&lt;/li&gt;
-&lt;li&gt;Pero probarla es relativamente fácil&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Si quieres cambiar el hash de un bloque vas a tener que recalcular el hash propio (que eso ya es bastante costoso) y los hashes de los bloques siguientes y aparte hacer creer que ese bloque que has metido es un bloque confiable&lt;/p&gt;
-&lt;p&gt;Podemos validar un bloque relativamente rápido pero el trabajo para crear el bloque y firmarle es muy dificil por lo tanto podemos afirmar que es muy dificil manipular un bloque por una o una gran cantidad de entidades&lt;/p&gt;
-&lt;h2&gt;Juntando todo en el main&lt;/h2&gt;
-&lt;p&gt;Por últimos tenemos que añadir esta prueba de trabajo a nuestro main&lt;/p&gt;
-&lt;p&gt;Antes del final del loop añadiremos:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pow := model.NewProof(block)
-fmt.Printf(&quot;Prueba de Trabajo: %s\n\n&quot;, strconv.FormatBool(pow.Validate()))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/MaQuiNa1995/Go-BlockChain/tree/2a67da8b90523cb669a2cb8b0f6a65931bc6cade&quot;&gt;Código en el repo hasta aqui&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Guía gRPC]]></title><description><![CDATA[Tabla de contenidos Que es gRPC Que tipos hay Como Funciona Porque gRPC Generación de código Java Para cualquier lenguaje (Windows…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/gRPC/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/gRPC/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Guía gRPC]]></title><description><![CDATA[Tabla de contenidos Que es gRPC Que tipos hay Como Funciona Porque gRPC Generación de código Java Para cualquier lenguaje (Windows…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/gRPC/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/gRPC/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#que-es-grpc&quot;&gt;Que es gRPC&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#que-tipos-hay&quot;&gt;Que tipos hay&lt;/a&gt;&lt;/li&gt;
