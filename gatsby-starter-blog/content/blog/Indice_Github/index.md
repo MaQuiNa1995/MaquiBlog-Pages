@@ -6,28 +6,28 @@ description: Esto es el índice de los repositorios de mi github ordenados por l
 
 # Tabla de contenidos
 - [Java](#java)
-    + [Pruebas técnicas](#pruebas-t-cnicas)
+    + [Pruebas técnicas](#pruebas-técnicas)
         * [Comercio](#comercio)
-        * [Football](#football)
+        * [Football](#####football)
         * [Vehiculos](#vehiculos)
     + [gRPC](#grpc)
-    + [Guía Spring-web](#gu-a-spring-web)
+    + [Guía Spring-web](###guía-spring-web)
     + [Testing](#testing)
       - [Junit4](#junit4)
       - [Mockito](#mockito)
       - [Webservices](#webservices)
     + [Webservices](#webservices-1)
       - [Quarkus](#quarkus)
-      - [Microservicio Genérico](#microservicio-gen-rico)
+      - [Microservicio Genérico](#microservicio-genérico)
       - [Hateoas](#hateoas)
       - [Spring Webflux](#spring-webflux)
     + [Herramientas](#herramientas)
       - [Extractor Uml](#extractor-uml)
       - [Recopilador Datos SQL](#recopilador-datos-sql)
       - [De-Serializador XML](#de-serializador-xml)
-      - [Envíos Mail](#env-os-mail)
+      - [Envíos Mail](#envío-mail)
       - [Pedidos Euskal](#pedidos-euskal)
-      - [Pedidos Japón](#pedidos-jap-n)
+      - [Pedidos Japón](#pedidos-japón)
       - [No-Afk-Tool](#no-afk-tool)
       - [Discord Bot](#discord-bot)
     + [Spring security](#spring-security)
@@ -35,7 +35,7 @@ description: Esto es el índice de los repositorios de mi github ordenados por l
     + [Docker](#docker)
     + [Jackson](#jackson)
     + [Persistencia](#persistencia)
-      - [Hibernate + Springboot](#hibernate---springboot)
+      - [Hibernate + Springboot](#hibernate-+-springboot)
       - [JPA](#jpa)
       - [MyBatis](#mybatis)
       - [MongoDb](#mongodb)
@@ -152,7 +152,7 @@ https://github.com/MaQuiNa1995/De-SerializadorXML
 
 Pequeña aplicación para la De-serialización de archivos XML
 
-#### Envíos Mail
+#### Envío Mail
 https://github.com/MaQuiNa1995/EnvioMail
 
 Pequeña herramienta para la muestra del envío de un mail con configuración por properties
