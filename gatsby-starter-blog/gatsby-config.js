@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/Rincon-Del-MaQuinarias",
+  pathPrefix: "/el-rincon-del-maquinarias",
 
   siteMetadata: {
     title: `Rincon Del MaQuinarias`,
