@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/el-rincon-del-maquinarias",
 
   siteMetadata: {
-    title: `Rincon Del MaQuinarias`,
+    title: `El Rincon Del MaQuinarias`,
     author: {
       name: `Christian Muñoz Asón`,
       summary: `tambien conocido como MaQuina1995`,
