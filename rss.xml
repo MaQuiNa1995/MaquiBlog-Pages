@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rincon del MaQuinarias RSS Feed]]></title><description><![CDATA[Rincon Del MaQuinarias]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Jan 2022 18:33:07 GMT</lastBuildDate><item><title><![CDATA[Golang Blockchain Básico]]></title><description><![CDATA[Tabla de contenidos Que es Blockchain Que es el Block Hash Función bytes.Join Creación de un bloque Añadiendo un bloque a la blockchain El…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Golang_Blockchain/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Golang_Blockchain/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rincon del MaQuinarias RSS Feed]]></title><description><![CDATA[Rincon Del MaQuinarias]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Jan 2022 18:39:40 GMT</lastBuildDate><item><title><![CDATA[Golang Blockchain Básico]]></title><description><![CDATA[Tabla de contenidos Que es Blockchain Que es el Block Hash Función bytes.Join Creación de un bloque Añadiendo un bloque a la blockchain El…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Golang_Blockchain/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Golang_Blockchain/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#que-es-blockchain&quot;&gt;Que es Blockchain&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#que-es-el-block&quot;&gt;Que es el Block&lt;/a&gt;
@@ -1898,128 +1898,7 @@ func main() {
 &lt;/ul&gt;
 &lt;h2&gt;Interfaces de interfaces&lt;/h2&gt;
 &lt;p&gt;Las interfaces de interfaces se usan principalmente para recolectar una serie de utilidades que son a su vez interfaces como podría ser la conexión a una base de datos tendrías por ejemplo un método para abrir la conexión a la misma y otro para cerrarlo&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Guía gRPC]]></title><description><![CDATA[Tabla de contenidos Que es gRPC Que tipos hay Como Funciona Porque gRPC Generación de código Java Para cualquier lenguaje (Windows…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/gRPC/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/gRPC/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#que-es-grpc&quot;&gt;Que es gRPC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#que-tipos-hay&quot;&gt;Que tipos hay&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#como-funciona&quot;&gt;Como Funciona&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#porque-grpc&quot;&gt;Porque gRPC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#generaci-n-de-c-digo&quot;&gt;Generación de código&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#java&quot;&gt;Java&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#para-cualquier-lenguaje--windows-&quot;&gt;Para cualquier lenguaje (Windows)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#diferencias-rest-vs-grpc&quot;&gt;Diferencias REST vs gRPC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#documentaci-n-oficial&quot;&gt;Documentación oficial&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Que es gRPC&lt;/h1&gt;
-&lt;p&gt;Es un protocolo por el cual se permite ejecutar un procedimiento de otro programa alojado en otro sistema&lt;/p&gt;
-&lt;p&gt;La mejor parte de gRPC es que los desarrolladores no tienen que codificar explicitamente los detalles de la interacción, este código se autogenera con el propio framework&lt;/p&gt;
-&lt;p&gt;De tal manera que si por ejemplo tenemos una aplicación Golang y una Java a traves de este protocolo podrían llamarse entre si&lt;/p&gt;
-&lt;p&gt;Uno actúa de servidor y otro de cliente (Luego veremos las diferentes formas que hay)&lt;/p&gt;
-&lt;h1&gt;Que tipos hay&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Unaria – Cliente manda 1 mensaje y el servidor responde con otro mensaje&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Streaming del lado de cliente – El cliente manda n mensajes y espera que el servidor mande 1 sola respuesta&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;streaming del lado del servidor – El cliente manda 1 mensaje y espera que el servidor mande N mensajes&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;bi-direccional – el cliente y el servidor se mandan multiples mensajes en paralelo y un orden arbitrario, este tipo es flexible y no bloqueante que se refiere a que ninguna de las 2 partes necesita esperar para mandar informacion a la otra&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1&gt;Como Funciona&lt;/h1&gt;
-&lt;p&gt;El cliente tiene un “stub” que provee el mismo método o función que tiene el servidor , este “stub” es autogenerado por el framework a traves de un compilador externo o en el caso de java a traves de un plugin que definimo en el pom&lt;/p&gt;
-&lt;p&gt;Este “stub” llamara a gRPC por detrás para intercambiar información con el servidor por la red&lt;/p&gt;
-&lt;p&gt;Gracias al “stub” el cliente y el servidor solo se tienen que preocupar de implementar su logica de negocio&lt;/p&gt;
-&lt;h1&gt;Porque gRPC&lt;/h1&gt;
-&lt;p&gt;Es una manera de comunicar diferentes lenguajes de programación que hoy en día existen en una aplicación productiva, por ejemplo podrías tener java o golang como backend y Javascript como frontend&lt;/p&gt;
-&lt;p&gt;Para la comunicación entre ellos debe haber algo para hacerlo de manera sencilla y rápida, eso es gRPC&lt;/p&gt;
-&lt;p&gt;Es necesario cumplir una serie de reglas para esa comunicación:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the communication channel&lt;/li&gt;
-&lt;li&gt;authentication&lt;/li&gt;
-&lt;li&gt;payload format&lt;/li&gt;
-&lt;li&gt;data model&lt;/li&gt;
-&lt;li&gt;error handling&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Generación de código&lt;/h1&gt;
-&lt;p&gt;Esta es la característica mas importante ya que genera el código necesario para la comunicación enter cliente y servidor&lt;/p&gt;
-&lt;p&gt;Lo primero que tendremos que hacer es crear el contrato en un archivo .proto que en el caso de java alojaremos en &lt;code class=&quot;language-text&quot;&gt;src/main/proto/&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Aqui definimos la sintaxis que usará nuestro archivo, es conveniente usar la versión 3 de este
-// Ya que aglutina mas lenguajes de programación compatibles 
-syntax = &quot;proto3&quot;;
-
-// Con esto indicamos que cada clase que se cree se haga en un fichero independiente
-option java_multiple_files = true;
-
-// Aqui indicaremos el paquete que tienen todos las clases de este archivo
-package com.github.maquina1995.grpc.model;
-
-// Aqui definimos un pojo que albergará la información de una Persona
-message Person {
-	// Aqui definimos los atributos indicando la posición de los mismos
-	string first_name = 1;
-	string last_name = 2;
-}
-
-// Lo mismo que lo de antes pero aqui solo tenemos 1 atributo
-message Greeting {
-	string message = 1;
-}
-
-// Aquí definimos un servicio que usa nuestros pojos 
-service HelloWorldService {
-  rpc sayHello (Person) returns (Greeting);
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Java&lt;/h2&gt;
-&lt;p&gt;Para poder generar los objetos asociados necesitamos:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Tener un plugin de maven&lt;/li&gt;
-&lt;li&gt;Ejecutar un &lt;code class=&quot;language-text&quot;&gt;mvn clean compile&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;plugin&gt;
-	&amp;lt;groupId&gt;org.xolstice.maven.plugins&amp;lt;/groupId&gt;
-	&amp;lt;artifactId&gt;protobuf-maven-plugin&amp;lt;/artifactId&gt;
-	&amp;lt;version&gt;${protobuf-maven-plugin.version}&amp;lt;/version&gt;
-	&amp;lt;configuration&gt;
-	&amp;lt;protocArtifact&gt;com.google.protobuf:protoc:3.5.1-1:exe:${os.detected.classifier}&amp;lt;/protocArtifact&gt;
-	&amp;lt;pluginId&gt;grpc-java&amp;lt;/pluginId&gt;
-	&amp;lt;pluginArtifact&gt;io.grpc:protoc-gen-grpc-java:1.16.1:exe:${os.detected.classifier}&amp;lt;/pluginArtifact&gt;
-	&amp;lt;/configuration&gt;
-	&amp;lt;executions&gt;
-		&amp;lt;execution&gt;
-			&amp;lt;goals&gt;
-				&amp;lt;goal&gt;compile&amp;lt;/goal&gt;
-				&amp;lt;goal&gt;compile-custom&amp;lt;/goal&gt;
-			&amp;lt;/goals&gt;
-		&amp;lt;/execution&gt;
-	&amp;lt;/executions&gt;
-&amp;lt;/plugin&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Al hacer el &lt;code class=&quot;language-text&quot;&gt;mvn clean compile&lt;/code&gt; podremos ver en la siguiente ruta: &lt;code class=&quot;language-text&quot;&gt;target\generated-sources\protobuf\java&lt;/code&gt; los archivos generados&lt;/p&gt;
-&lt;h2&gt;Para cualquier lenguaje (Windows)&lt;/h2&gt;
-&lt;p&gt;Según la respuesta de Yuvaraj en: &lt;a href=&quot;https://stackoverflow.com/questions/13616033/install-protocol-buffers-on-windows&quot;&gt;https://stackoverflow.com/questions/13616033/install-protocol-buffers-on-windows&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Solo tienes que descargar: &lt;a href=&quot;https://github.com/protocolbuffers/protobuf/releases/download/v3.19.1/protoc-3.19.1-win64.zip&quot;&gt;https://github.com/protocolbuffers/protobuf/releases/download/v3.19.1/protoc-3.19.1-win64.zip&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Una vez que la tengas debes descomprimirla en una ruta&lt;/li&gt;
-&lt;li&gt;Esa ruta la tienes que meter como PROTOC_HOME en las variables de entorno&lt;/li&gt;
-&lt;li&gt;A continuación añadiremos %PROTOC_HOME%\bin a la variable path&lt;/li&gt;
-&lt;li&gt;Abriremos una nueva terminal (no vale las que tengamos abiertas ya que has modificado las variables de entorno)&lt;/li&gt;
-&lt;li&gt;Para finalizar comprobaremos la correcta instalación y configuración con el comando: &lt;code class=&quot;language-text&quot;&gt;protoc&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;Diferencias REST vs gRPC&lt;/h1&gt;
-&lt;p&gt;En el rest la comunicación solo se puede hacer en un sentido &lt;code class=&quot;language-text&quot;&gt;cliente -&gt; servidor&lt;/code&gt; mientras que en gRPC en todos los sentidos.&lt;/p&gt;
-&lt;p&gt;Rest está ampliamente soportado por los navegadores mientras que gRPC está limitado.&lt;/p&gt;
-&lt;h1&gt;Documentación oficial&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Java: &lt;a href=&quot;https://grpc.io/docs/languages/java/basics/&quot;&gt;Documentacion gRPC Java&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Golang: &lt;a href=&quot;https://grpc.io/docs/languages/go/basics/&quot;&gt;Documentacion gRPC Golang&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Indice Github]]></title><description><![CDATA[Tabla de contenidos Java Pruebas técnicas Comercio Football Vehiculos gRPC Guía Spring-web Testing Junit4 Mockito Webservices Webservices…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Indice_Github/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Indice_Github/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Indice Github]]></title><description><![CDATA[Tabla de contenidos Java Pruebas técnicas Comercio Football Vehiculos gRPC Guía Spring-web Testing Junit4 Mockito Webservices Webservices…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Indice_Github/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Indice_Github/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#java&quot;&gt;Java&lt;/a&gt;
 &lt;ul&gt;
@@ -2275,4 +2154,125 @@ Uso de Swagger para la documentación y uso de la UI para pruebas contra esos en
 &lt;p&gt;pequeño juego en el que se tiene que llegar a la botella para ganar&lt;/p&gt;
 &lt;h4&gt;Click Kill Aliens&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/MaQuiNa1995/Click-Kill-Aliens&quot;&gt;https://github.com/MaQuiNa1995/Click-Kill-Aliens&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Pequeño juego en el que a traves del ratón se debe matar aliens&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;Pequeño juego en el que a traves del ratón se debe matar aliens&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Guía gRPC]]></title><description><![CDATA[Tabla de contenidos Que es gRPC Que tipos hay Como Funciona Porque gRPC Generación de código Java Para cualquier lenguaje (Windows…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/gRPC/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/gRPC/</guid><pubDate>Sun, 05 Dec 2021 01:33:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tabla de contenidos&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#que-es-grpc&quot;&gt;Que es gRPC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#que-tipos-hay&quot;&gt;Que tipos hay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#como-funciona&quot;&gt;Como Funciona&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#porque-grpc&quot;&gt;Porque gRPC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#generaci-n-de-c-digo&quot;&gt;Generación de código&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#java&quot;&gt;Java&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#para-cualquier-lenguaje--windows-&quot;&gt;Para cualquier lenguaje (Windows)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#diferencias-rest-vs-grpc&quot;&gt;Diferencias REST vs gRPC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#documentaci-n-oficial&quot;&gt;Documentación oficial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Que es gRPC&lt;/h1&gt;
+&lt;p&gt;Es un protocolo por el cual se permite ejecutar un procedimiento de otro programa alojado en otro sistema&lt;/p&gt;
+&lt;p&gt;La mejor parte de gRPC es que los desarrolladores no tienen que codificar explicitamente los detalles de la interacción, este código se autogenera con el propio framework&lt;/p&gt;
+&lt;p&gt;De tal manera que si por ejemplo tenemos una aplicación Golang y una Java a traves de este protocolo podrían llamarse entre si&lt;/p&gt;
+&lt;p&gt;Uno actúa de servidor y otro de cliente (Luego veremos las diferentes formas que hay)&lt;/p&gt;
+&lt;h1&gt;Que tipos hay&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Unaria – Cliente manda 1 mensaje y el servidor responde con otro mensaje&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Streaming del lado de cliente – El cliente manda n mensajes y espera que el servidor mande 1 sola respuesta&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;streaming del lado del servidor – El cliente manda 1 mensaje y espera que el servidor mande N mensajes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;bi-direccional – el cliente y el servidor se mandan multiples mensajes en paralelo y un orden arbitrario, este tipo es flexible y no bloqueante que se refiere a que ninguna de las 2 partes necesita esperar para mandar informacion a la otra&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Como Funciona&lt;/h1&gt;
+&lt;p&gt;El cliente tiene un “stub” que provee el mismo método o función que tiene el servidor , este “stub” es autogenerado por el framework a traves de un compilador externo o en el caso de java a traves de un plugin que definimo en el pom&lt;/p&gt;
+&lt;p&gt;Este “stub” llamara a gRPC por detrás para intercambiar información con el servidor por la red&lt;/p&gt;
+&lt;p&gt;Gracias al “stub” el cliente y el servidor solo se tienen que preocupar de implementar su logica de negocio&lt;/p&gt;
+&lt;h1&gt;Porque gRPC&lt;/h1&gt;
+&lt;p&gt;Es una manera de comunicar diferentes lenguajes de programación que hoy en día existen en una aplicación productiva, por ejemplo podrías tener java o golang como backend y Javascript como frontend&lt;/p&gt;
+&lt;p&gt;Para la comunicación entre ellos debe haber algo para hacerlo de manera sencilla y rápida, eso es gRPC&lt;/p&gt;
+&lt;p&gt;Es necesario cumplir una serie de reglas para esa comunicación:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the communication channel&lt;/li&gt;
+&lt;li&gt;authentication&lt;/li&gt;
+&lt;li&gt;payload format&lt;/li&gt;
+&lt;li&gt;data model&lt;/li&gt;
+&lt;li&gt;error handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Generación de código&lt;/h1&gt;
+&lt;p&gt;Esta es la característica mas importante ya que genera el código necesario para la comunicación enter cliente y servidor&lt;/p&gt;
+&lt;p&gt;Lo primero que tendremos que hacer es crear el contrato en un archivo .proto que en el caso de java alojaremos en &lt;code class=&quot;language-text&quot;&gt;src/main/proto/&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Aqui definimos la sintaxis que usará nuestro archivo, es conveniente usar la versión 3 de este
+// Ya que aglutina mas lenguajes de programación compatibles 
+syntax = &quot;proto3&quot;;
+
+// Con esto indicamos que cada clase que se cree se haga en un fichero independiente
+option java_multiple_files = true;
+
+// Aqui indicaremos el paquete que tienen todos las clases de este archivo
+package com.github.maquina1995.grpc.model;
+
+// Aqui definimos un pojo que albergará la información de una Persona
+message Person {
+	// Aqui definimos los atributos indicando la posición de los mismos
+	string first_name = 1;
+	string last_name = 2;
+}
+
+// Lo mismo que lo de antes pero aqui solo tenemos 1 atributo
+message Greeting {
+	string message = 1;
+}
+
+// Aquí definimos un servicio que usa nuestros pojos 
+service HelloWorldService {
+  rpc sayHello (Person) returns (Greeting);
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Java&lt;/h2&gt;
+&lt;p&gt;Para poder generar los objetos asociados necesitamos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Tener un plugin de maven&lt;/li&gt;
+&lt;li&gt;Ejecutar un &lt;code class=&quot;language-text&quot;&gt;mvn clean compile&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;plugin&gt;
+	&amp;lt;groupId&gt;org.xolstice.maven.plugins&amp;lt;/groupId&gt;
+	&amp;lt;artifactId&gt;protobuf-maven-plugin&amp;lt;/artifactId&gt;
+	&amp;lt;version&gt;${protobuf-maven-plugin.version}&amp;lt;/version&gt;
+	&amp;lt;configuration&gt;
+	&amp;lt;protocArtifact&gt;com.google.protobuf:protoc:3.5.1-1:exe:${os.detected.classifier}&amp;lt;/protocArtifact&gt;
+	&amp;lt;pluginId&gt;grpc-java&amp;lt;/pluginId&gt;
+	&amp;lt;pluginArtifact&gt;io.grpc:protoc-gen-grpc-java:1.16.1:exe:${os.detected.classifier}&amp;lt;/pluginArtifact&gt;
+	&amp;lt;/configuration&gt;
+	&amp;lt;executions&gt;
+		&amp;lt;execution&gt;
+			&amp;lt;goals&gt;
+				&amp;lt;goal&gt;compile&amp;lt;/goal&gt;
+				&amp;lt;goal&gt;compile-custom&amp;lt;/goal&gt;
+			&amp;lt;/goals&gt;
+		&amp;lt;/execution&gt;
+	&amp;lt;/executions&gt;
+&amp;lt;/plugin&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Al hacer el &lt;code class=&quot;language-text&quot;&gt;mvn clean compile&lt;/code&gt; podremos ver en la siguiente ruta: &lt;code class=&quot;language-text&quot;&gt;target\generated-sources\protobuf\java&lt;/code&gt; los archivos generados&lt;/p&gt;
+&lt;h2&gt;Para cualquier lenguaje (Windows)&lt;/h2&gt;
+&lt;p&gt;Según la respuesta de Yuvaraj en: &lt;a href=&quot;https://stackoverflow.com/questions/13616033/install-protocol-buffers-on-windows&quot;&gt;https://stackoverflow.com/questions/13616033/install-protocol-buffers-on-windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Solo tienes que descargar: &lt;a href=&quot;https://github.com/protocolbuffers/protobuf/releases/download/v3.19.1/protoc-3.19.1-win64.zip&quot;&gt;https://github.com/protocolbuffers/protobuf/releases/download/v3.19.1/protoc-3.19.1-win64.zip&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Una vez que la tengas debes descomprimirla en una ruta&lt;/li&gt;
+&lt;li&gt;Esa ruta la tienes que meter como PROTOC_HOME en las variables de entorno&lt;/li&gt;
+&lt;li&gt;A continuación añadiremos %PROTOC_HOME%\bin a la variable path&lt;/li&gt;
+&lt;li&gt;Abriremos una nueva terminal (no vale las que tengamos abiertas ya que has modificado las variables de entorno)&lt;/li&gt;
+&lt;li&gt;Para finalizar comprobaremos la correcta instalación y configuración con el comando: &lt;code class=&quot;language-text&quot;&gt;protoc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Diferencias REST vs gRPC&lt;/h1&gt;
+&lt;p&gt;En el rest la comunicación solo se puede hacer en un sentido &lt;code class=&quot;language-text&quot;&gt;cliente -&gt; servidor&lt;/code&gt; mientras que en gRPC en todos los sentidos.&lt;/p&gt;
+&lt;p&gt;Rest está ampliamente soportado por los navegadores mientras que gRPC está limitado.&lt;/p&gt;
+&lt;h1&gt;Documentación oficial&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Java: &lt;a href=&quot;https://grpc.io/docs/languages/java/basics/&quot;&gt;Documentacion gRPC Java&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Golang: &lt;a href=&quot;https://grpc.io/docs/languages/go/basics/&quot;&gt;Documentacion gRPC Golang&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item></channel></rss>
